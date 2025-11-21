@@ -9,8 +9,8 @@
     @vite('resources/css/app.css')
 </head>
 
-<body class="flow">
-<header class="flow">
+<body class="body">
+<header class="header">
     <div class="nav-info container">
         <p class="nav-info__text">
             Nous vous accueillons du lundi au samedi de 10h à 18h.
@@ -21,7 +21,7 @@
             </span>
     </div>
     <nav class="nav-bar container">
-        <a href="#" class="nav-bar__brand flow">
+        <a href="#" class="nav-bar__brand">
             <h2 class="nav-bar__title">Les Pattes Heureuses</h2>
             <p class="nav-bar__subtitle">Votre refuge Liégeois</p>
         </a>
@@ -33,45 +33,39 @@
         </ul>
     </nav>
 </header>
-<main class="flow">
+<main class="main">
     <section class="hero">
-        <div class="hero__content flow">
             <h1 class="hero__title">Les Pattes Heureuses</h1>
-
             <p class="hero__text">
                 Nous accueillons chaque année des dizaines d’animaux dans le besoin.
                 Découvrez-les et aidez-les à trouver un nouveau foyer.
             </p>
-
             <a href="" class="u-btn">Voir tous nos animaux</a>
-        </div>
     </section>
-    <section class="section adopt container flow">
+    <section class="section adopt container">
         <h2>Comment adopter ?</h2>
-
         <ol class="adopt__list">
             <li class="step-card">
-                <span class="step-card__number">1</span>
+                <strong class="step-card__number">1</strong>
                 <h3 class="step-card__title">Choisissez votre futur compagnon</h3>
                 <a href="" class="step-card__link">Consultez les fiches d’animaux disponibles.</a>
             </li>
 
             <li class="step-card">
-                <span class="step-card__number">2</span>
+                <strong class="step-card__number">2</strong>
                 <h3 class="step-card__title">Faites une demande d’adoption</h3>
                 <a href="" class="step-card__link">Remplissez le formulaire lié à sa fiche.</a>
             </li>
 
             <li class="step-card">
-                <span class="step-card__number">3</span>
+                <strong class="step-card__number">3</strong>
                 <h3 class="step-card__title">Rencontrez-le au refuge</h3>
                 <a href="" class="step-card__link">L’équipe vous contactera pour fixer un rendez-vous.</a>
             </li>
         </ol>
     </section>
-    <section class="section discover container flow">
-
-        <div class="flow">
+    <section class="section discover container">
+        <div class="discover__animals">
             <h2>Découvrez nos animaux</h2>
             <p>
                 Parcourez les fiches de nos animaux disponibles à l’adoption.
@@ -125,14 +119,19 @@
     </section>
     <section class="section about container about-grid">
 
-        <div class="flow">
-            <h2>Nous & nos missions</h2>
-
+        <div class="about__text">
+            <div class="about__title">
+                <h2>Nous & nos missions</h2>
+                <svg width="319" height="15" viewBox="0 0 319 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.5 2.5H316.5" stroke="#EDE0D4" stroke-width="5" stroke-linecap="round"/>
+                <path d="M44.5 12.5L295.391 3" stroke="#EDE0D4" stroke-width="5" stroke-linecap="round"/>
+                </svg>
+            </div>
             <p>
-                Situé en plein cœur de la région liégeoise, notre refuge offre une seconde chance
-                à des chiens, chats et petits compagnons qui n’attendent qu’une famille aimante.
-                Depuis plus de 10 ans, notre équipe de bénévoles passionnés veille chaque jour
-                au bien-être des animaux.
+                Situé en plein cœur de la région liégeoise, notre refuge offre une seconde chance à des chiens, chats et petits compagnons qui n’attendent qu’une famille aimante. Depuis plus de 10 ans, notre équipe de bénévoles passionnés veille chaque jour au bien-être des animaux, de leur arrivée jusqu’à leur adoption.
+            </p>
+            <p>
+                Chaque histoire est unique, et nous mettons tout en œuvre pour leur redonner confiance, santé et amour
             </p>
 
             <a href="" class="u-btn">Rejoignez-nous</a>
@@ -140,14 +139,20 @@
 
         <div class="about__image-area">
             <div class="about__paw"></div>
-            <img src="" alt="Refuge">
+            <img src="../../../storage/app/public/mission-dog.png" alt="Refuge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="234" height="233" viewBox="0 0 234 233" fill="none">
+                <circle cx="154" cy="152.174" r="80" fill="#EDE0D4"/>
+                <ellipse cx="37.1228" cy="113.172" rx="23" ry="30" transform="rotate(-63.4021 37.1228 113.172)" fill="#EDE0D4"/>
+                <ellipse cx="85.4767" cy="47.6509" rx="23" ry="30" transform="rotate(-45 85.4767 47.6509)" fill="#EDE0D4"/>
+                <ellipse cx="170.477" cy="34.6509" rx="23" ry="30" transform="rotate(-13.9157 170.477 34.6509)" fill="#EDE0D4"/>
+            </svg>
         </div>
 
     </section>
 </main>
 <footer class="footer container">
-
-    <div class="footer__left flow">
+    <div class="footer__container">
+    <div class="footer__left">
         <h2>Les Pattes Heureuses</h2>
         <p>rue du Quelquechose 18<br>4500 Ville</p>
         <p>+32 471 32 63 08</p>
@@ -162,8 +167,7 @@
             <li><a href="">Nous contacter</a></li>
         </ul>
     </nav>
-
+    </div>
 </footer>
-
 </body>
 </html>

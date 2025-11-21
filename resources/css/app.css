@@ -1,15 +1,15 @@
 @import 'tailwindcss';
 
-@import "public/animal.css";
-@import "public/animals.css";
-@import "public/contact.css";
-@import "public/home.css";
-@import "public/volunteer.css";
+@import "./public/animal.css";
+@import "./public/animals.css";
+@import "./public/contact.css";
+@import "./public/home.css";
+@import "./public/volunteer.css";
 
-@import "base/reset.css";
+@import "./base/reset.css";
 
-@import "layout/header.css";
-@import "layout/footer.css";
+@import "./layout/header.css";
+@import "./layout/footer.css";
 
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';

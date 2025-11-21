@@ -1,0 +1,36 @@
+footer {
+    background-color: var(--caramel);
+    color: var(--white);
+
+}
+.footer__container{
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.footer__left h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer__left p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.footer__right ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer__right ul li a {
+    color: white;
+    font-weight: 500;
+    transition: opacity 0.3s;
+}
+
+.footer__right ul li a:hover {
+    opacity: 0.8;
+}
