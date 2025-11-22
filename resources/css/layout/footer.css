@@ -34,3 +34,10 @@ footer {
 .footer__right ul li a:hover {
     opacity: 0.8;
 }
+
+@media (max-width: 1024px) {
+    .footer__container{
+        flex-direction: column;
+        gap: 48px;
+    }
+}

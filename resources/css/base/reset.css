@@ -12,7 +12,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: initial;
     font-family: 'Poppins', Arial, sans-serif;
 }
 
@@ -46,7 +45,7 @@ h2{
     }
     .cta__btn{
         font-size: 14px;
-        padding: 16px 16px;
+        padding: 16px 24px;
         font-weight: 400;
     }
     h2{

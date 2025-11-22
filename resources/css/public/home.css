@@ -61,8 +61,7 @@
 }
 
 .card-grid{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
     gap: 20px;
     margin: 24px 0;
 
@@ -236,5 +235,19 @@
     }
     .discover__animals p{
         font-size: 14px;
+    }
+    .card-grid{
+        flex-direction: column;
+    }
+    .about__text{
+        max-width: 800px;
+    }
+    .about__image{
+        display: none;
+    }
+    .about__image__svg{
+       top: 100px;
+        left: -200px;
+        opacity: 50%;
     }
 }
