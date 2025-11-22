@@ -1,46 +1,12 @@
-<!doctype html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Refuge">
-    <meta name="author" content="Coban Seren">
-    <title>Refuge - Accueil</title>
-    @vite('resources/css/app.css')
-</head>
-
-<body class="body">
-<header class="header">
-    <div class="nav-info container">
-        <p class="nav-info__text">
-            Nous vous accueillons du lundi au samedi de 10h à 18h.
-            Venez rencontrer nos animaux et trouvez votre futur compagnon !
-        </p>
-        <span class="nav-info__lang">
-                <a href="">Fr</a> | <a href="">En</a>
-            </span>
-    </div>
-    <nav class="nav-bar container">
-        <a href="#" class="nav-bar__brand">
-            <h2 class="nav-bar__title">Les Pattes Heureuses</h2>
-            <p class="nav-bar__subtitle">Votre refuge Liégeois</p>
-        </a>
-        <ul class="nav-bar__menu">
-            <li><a href="">Accueil</a></li>
-            <li><a href="">Nos animaux</a></li>
-            <li><a href="">Devenir bénévole</a></li>
-            <li><a class="u-btn" href="">Nous contacter</a></li>
-        </ul>
-    </nav>
-</header>
+@include('public.components.header')
 <main class="main">
-    <section class="hero">
-            <h1 class="hero__title">Les Pattes Heureuses</h1>
-            <p class="hero__text">
-                Nous accueillons chaque année des dizaines d’animaux dans le besoin.
-                Découvrez-les et aidez-les à trouver un nouveau foyer.
-            </p>
-            <a href="" class="u-btn">Voir tous nos animaux</a>
+    <section class="hero container">
+        <h1 class="main__hero__title">Les Pattes Heureuses</h1>
+        <p class="hero__text">
+            Nous accueillons chaque année des dizaines d’animaux dans le besoin.
+            Découvrez-les et aidez-les à trouver un nouveau foyer.
+        </p>
+        <a href="" class="u-btn">Voir tous nos animaux</a>
     </section>
     <section class="section adopt container">
         <h2>Comment adopter ?</h2>
@@ -73,42 +39,69 @@
                 et être aimé comme il le mérite.
             </p>
         </div>
-
-        <div class="animal-grid">
-            <article class="animal-card">
-                <div class="animal-card__content">
-                    <h3>Moka</h3>
-                    <p>Caniche – 5 ans</p>
-                    <p>Adoptable</p>
+        <div class="card-grid">
+            <article class="card">
+                <div class="card-text__content">
+                    <div class="card__text__container">
+                        <h3 class="card__title">Moka</h3>
+                        <p class="card__text">Caniche – 5 ans</p>
+                        <p class="card__status">Adoptable</p>
+                    </div>
+                    <div class="card__btn">
+                        <a class="card__arrow" href="">→</a>
+                    </div>
                 </div>
-                <a class="animal-card__arrow" href="">→</a>
+                <figure class="image-container">
+                    <img class="image" src="/storage/first-animal.png" alt="">
+                </figure>
             </article>
 
-            <article class="animal-card">
-                <div class="animal-card__content">
-                    <h3>Moka</h3>
-                    <p>Caniche – 5 ans</p>
-                    <p>Adoptable</p>
+            <article class="card">
+                <div class="card-text__content">
+                    <div class="card__text__container">
+                        <h3 class="card__title">Moka</h3>
+                        <p class="card__text">Caniche – 5 ans</p>
+                        <p class="card__status">Adoptable</p>
+                    </div>
+                    <div class="card__btn">
+                        <a class="card__arrow" href="">→</a>
+                    </div>
                 </div>
-                <a class="animal-card__arrow" href="">→</a>
+                <figure class="image-container">
+                    <img class="image" src="/storage/first-animal.png" alt="">
+                </figure>
             </article>
 
-            <article class="animal-card">
-                <div class="animal-card__content">
-                    <h3>Moka</h3>
-                    <p>Caniche – 5 ans</p>
-                    <p>Adoptable</p>
+            <article class="card">
+                <div class="card-text__content">
+                    <div class="card__text__container">
+                        <h3 class="card__title">Moka</h3>
+                        <p class="card__text">Caniche – 5 ans</p>
+                        <p class="card__status">Adoptable</p>
+                    </div>
+                    <div class="card__btn">
+                        <a class="card__arrow" href="">→</a>
+                    </div>
                 </div>
-                <a class="animal-card__arrow" href="">→</a>
+                <figure class="image-container">
+                    <img class="image" src="/storage/first-animal.png" alt="">
+                </figure>
             </article>
 
-            <article class="animal-card">
-                <div class="animal-card__content">
-                    <h3>Moka</h3>
-                    <p>Caniche – 5 ans</p>
-                    <p>Adoptable</p>
+            <article class="card">
+                <div class="card-text__content">
+                    <div class="card__text__container">
+                        <h3 class="card__title">Moka</h3>
+                        <p class="card__text">Caniche – 5 ans</p>
+                        <p class="card__status">Adoptable</p>
+                    </div>
+                    <div class="card__btn">
+                        <a class="card__arrow" href="">→</a>
+                    </div>
                 </div>
-                <a class="animal-card__arrow" href="">→</a>
+                <figure class="image-container">
+                    <img class="image" src="/storage/first-animal.png" alt="">
+                </figure>
             </article>
         </div>
 
@@ -123,12 +116,14 @@
             <div class="about__title">
                 <h2>Nous & nos missions</h2>
                 <svg width="319" height="15" viewBox="0 0 319 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.5 2.5H316.5" stroke="#EDE0D4" stroke-width="5" stroke-linecap="round"/>
-                <path d="M44.5 12.5L295.391 3" stroke="#EDE0D4" stroke-width="5" stroke-linecap="round"/>
+                    <path d="M2.5 2.5H316.5" stroke="#EDE0D4" stroke-width="5" stroke-linecap="round"/>
+                    <path d="M44.5 12.5L295.391 3" stroke="#EDE0D4" stroke-width="5" stroke-linecap="round"/>
                 </svg>
             </div>
             <p>
-                Situé en plein cœur de la région liégeoise, notre refuge offre une seconde chance à des chiens, chats et petits compagnons qui n’attendent qu’une famille aimante. Depuis plus de 10 ans, notre équipe de bénévoles passionnés veille chaque jour au bien-être des animaux, de leur arrivée jusqu’à leur adoption.
+                Situé en plein cœur de la région liégeoise, notre refuge offre une seconde chance à des chiens, chats et
+                petits compagnons qui n’attendent qu’une famille aimante. Depuis plus de 10 ans, notre équipe de
+                bénévoles passionnés veille chaque jour au bien-être des animaux, de leur arrivée jusqu’à leur adoption.
             </p>
             <p>
                 Chaque histoire est unique, et nous mettons tout en œuvre pour leur redonner confiance, santé et amour
@@ -138,36 +133,19 @@
         </div>
 
         <div class="about__image-area">
-            <div class="about__paw"></div>
-            <img src="../../../storage/app/public/mission-dog.png" alt="Refuge">
-            <svg xmlns="http://www.w3.org/2000/svg" width="234" height="233" viewBox="0 0 234 233" fill="none">
+            <img class="about__image" src="/storage/mission-dog.png" alt="Refuge">
+            <svg class="about__image__svg" xmlns="http://www.w3.org/2000/svg" width="234" height="233" viewBox="0 0 234 233" fill="none">
                 <circle cx="154" cy="152.174" r="80" fill="#EDE0D4"/>
-                <ellipse cx="37.1228" cy="113.172" rx="23" ry="30" transform="rotate(-63.4021 37.1228 113.172)" fill="#EDE0D4"/>
-                <ellipse cx="85.4767" cy="47.6509" rx="23" ry="30" transform="rotate(-45 85.4767 47.6509)" fill="#EDE0D4"/>
-                <ellipse cx="170.477" cy="34.6509" rx="23" ry="30" transform="rotate(-13.9157 170.477 34.6509)" fill="#EDE0D4"/>
+                <ellipse cx="37.1228" cy="113.172" rx="23" ry="30" transform="rotate(-63.4021 37.1228 113.172)"
+                         fill="#EDE0D4"/>
+                <ellipse cx="85.4767" cy="47.6509" rx="23" ry="30" transform="rotate(-45 85.4767 47.6509)"
+                         fill="#EDE0D4"/>
+                <ellipse cx="170.477" cy="34.6509" rx="23" ry="30" transform="rotate(-13.9157 170.477 34.6509)"
+                         fill="#EDE0D4"/>
             </svg>
         </div>
 
     </section>
 </main>
-<footer class="footer container">
-    <div class="footer__container">
-    <div class="footer__left">
-        <h2>Les Pattes Heureuses</h2>
-        <p>rue du Quelquechose 18<br>4500 Ville</p>
-        <p>+32 471 32 63 08</p>
-        <p>Du lundi au samedi de 10h à 18h</p>
-    </div>
+@include('public.components.footer')
 
-    <nav class="footer__right">
-        <ul class="footer__menu">
-            <li><a href="">Accueil</a></li>
-            <li><a href="">Nos animaux</a></li>
-            <li><a href="">Devenir bénévole</a></li>
-            <li><a href="">Nous contacter</a></li>
-        </ul>
-    </nav>
-    </div>
-</footer>
-</body>
-</html>

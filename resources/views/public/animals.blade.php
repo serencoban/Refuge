@@ -6,33 +6,41 @@
     <meta name="description" content="Refuge">
     <meta name="author" content="Coban Seren">
     <title>Refuge - Accueil</title>
+    @vite('resources/css/app.css')
 </head>
 <body>
-<header>
-    <div class="navbar__container">
-        <div class="navbar__subtitle">
-            <p>Nous vous accueillons du lundi au samedi de 10h à 18h. Venez rencontrer nos animaux et trouvez votre futur compagnon ! </p>
-            <span class="lang"><a href="">Fr</a> | <a href="">En</a></span>
-        </div>
-        <nav class="navbar__navigation">
-            <a href="#">
-                <h2 class="home__title">Les Pattes Heureuses</h2>
-                <p class="home__subtitle">Votre refuge Liègeois</p>
-            </a>
-            <ul>
-                <li><a href="">Accueil</a></li>
-                <li><a href="">Nos animaux</a></li>
-                <li><a href="">Devenir bénévole</a></li>
-                <li><a href="">Nous contacter</a></li>
-            </ul>
-        </nav>
+<header class="header">
+    <div class="nav-info container">
+        <p class="nav-info__text">
+            Nous vous accueillons du lundi au samedi de 10h à 18h.
+            Venez rencontrer nos animaux et trouvez votre futur compagnon !
+        </p>
+        <span class="nav-info__lang">
+                <a href="">Fr</a> | <a href="">En</a>
+            </span>
     </div>
+    <nav class="nav-bar container">
+        <a href="#" class="nav-bar__brand">
+            <h2 class="nav-bar__title">Les Pattes Heureuses</h2>
+            <p class="nav-bar__subtitle">Votre refuge Liégeois</p>
+        </a>
+        <ul class="nav-bar__menu">
+            <li><a href="">Accueil</a></li>
+            <li><a href="">Nos animaux</a></li>
+            <li><a href="">Devenir bénévole</a></li>
+            <li><a class="u-btn" href="">Nous contacter</a></li>
+        </ul>
+    </nav>
 </header>
 <main>
-    <div>
-        <h1>Nos animaux</h1>
+    <section>
+        <h1 class="hero__title">Nos animaux</h1>
+        <svg width="319" height="15" viewBox="0 0 319 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 2.5H316.5" stroke="#EDE0D4" stroke-width="5" stroke-linecap="round"/>
+            <path d="M44.5 12.5L295.391 3" stroke="#EDE0D4" stroke-width="5" stroke-linecap="round"/>
+        </svg>
         <p>Parcourez les profils de nos chiens, chats et petits compagnons en attente d’un nouveau foyer. Chaque animal a son histoire, son caractère et ses besoins : peut-être trouverez-vous ici votre futur compagnon de vie.</p>
-    </div>
+    </section>
     <section>
         <div>
             <p>Filtrer par:</p>
@@ -113,22 +121,4 @@
         </div>
     </section>
 </main>
-<footer>
-    <div class="footer__left">
-        <h2>Les Pattes Heureuses</h2>
-        <p>rue du Quelquechose 18
-            4500 Ville</p>
-        <p>+32 471 32 63 08</p>
-        <p>Du lundi au samedi de 10h à 18h</p>
-    </div>
-    <nav class="footer__right">
-        <ul>
-            <li><a href="">Accueil</a></li>
-            <li><a href="">Nos animaux</a></li>
-            <li><a href="">Devenir bénévole</a></li>
-            <li><a href="">Nous contacter</a></li>
-        </ul>
-    </nav>
-</footer>
-</body>
-</html>
+@include('public.components.footer')
