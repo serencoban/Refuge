@@ -1,7 +1,6 @@
 @include('public.components.header')
 
 <main class="animals-page">
-    <!-- SECTION HERO -->
     <section class="animals-hero">
         <h1 class="animals-hero__title">Nos animaux</h1>
         <svg class="animals-hero__divider" width="319" height="15" viewBox="0 0 319 15" fill="none" xmlns="http://www.w3.org/2000/svg">

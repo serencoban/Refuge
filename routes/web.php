@@ -10,10 +10,10 @@ Route::get('/animals', function () {
     return view('public.animals');
 });
 
-Route::get('/animals', function () {
-    return view('public.animals');
-});
-
 Route::get('/animal', function () {
     return view('public.animal');
+});
+
+Route::get('/contact', function () {
+    return view('public.contact');
 });
