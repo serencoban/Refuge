@@ -1,12 +1,12 @@
 @include('public.components.header')
 <main class="main">
-    <section class="hero container">
+    <section class="main__hero container">
         <h1 class="main__hero__title">Les Pattes Heureuses</h1>
-        <p class="hero__text">
+        <p class="main__hero__text">
             Nous accueillons chaque année des dizaines d’animaux dans le besoin.
             Découvrez-les et aidez-les à trouver un nouveau foyer.
         </p>
-        <a href="" class="u-btn">Voir tous nos animaux</a>
+        <a href="" class="cta__btn">Voir tous nos animaux</a>
     </section>
     <section class="section adopt container">
         <h2>Comment adopter ?</h2>
@@ -55,7 +55,6 @@
                     <img class="image" src="/storage/first-animal.png" alt="">
                 </figure>
             </article>
-
             <article class="card">
                 <div class="card-text__content">
                     <div class="card__text__container">
@@ -68,10 +67,9 @@
                     </div>
                 </div>
                 <figure class="image-container">
-                    <img class="image" src="/storage/first-animal.png" alt="">
+                    <img class="image" src="/storage/second-animal.png" alt="">
                 </figure>
             </article>
-
             <article class="card">
                 <div class="card-text__content">
                     <div class="card__text__container">
@@ -84,10 +82,9 @@
                     </div>
                 </div>
                 <figure class="image-container">
-                    <img class="image" src="/storage/first-animal.png" alt="">
+                    <img class="image" src="/storage/third-animal.png" alt="">
                 </figure>
             </article>
-
             <article class="card">
                 <div class="card-text__content">
                     <div class="card__text__container">
@@ -100,13 +97,12 @@
                     </div>
                 </div>
                 <figure class="image-container">
-                    <img class="image" src="/storage/first-animal.png" alt="">
+                    <img class="image" src="/storage/fourth-animal.png" alt="">
                 </figure>
             </article>
         </div>
-
         <div class="u-center">
-            <a href="" class="u-btn">Voir tous nos animaux</a>
+            <a href="" class="cta__btn">Voir tous nos animaux</a>
         </div>
 
     </section>
@@ -129,7 +125,7 @@
                 Chaque histoire est unique, et nous mettons tout en œuvre pour leur redonner confiance, santé et amour
             </p>
 
-            <a href="" class="u-btn">Rejoignez-nous</a>
+            <a href="" class="cta__btn">Rejoignez-nous</a>
         </div>
 
         <div class="about__image-area">

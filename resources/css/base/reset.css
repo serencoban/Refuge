@@ -25,7 +25,7 @@ body{
     padding: 0 96px 96px;
 }
 
-.u-btn{
+.cta__btn{
     background-color: var(--forest-green);
     border-radius: 1rem;
     color: var(--white);
@@ -38,4 +38,19 @@ body{
 h2{
     font-size: 32px;
     font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+    .container{
+        padding: 0 20px 64px;
+    }
+    .cta__btn{
+        font-size: 14px;
+        padding: 16px 16px;
+        font-weight: 400;
+    }
+    h2{
+        font-size: 20px;
+        font-weight: 500;
+    }
 }

@@ -1,34 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Refuge">
-    <meta name="author" content="Coban Seren">
-    <title>Devenir Bénévole</title>
-    @vite('resources/css/app.css')
-</head>
-<body>
-<header>
-    <div class="navbar__container">
-        <div class="navbar__subtitle">
-            <p>Nous vous accueillons du lundi au samedi de 10h à 18h. Venez rencontrer nos animaux et trouvez votre futur compagnon ! </p>
-            <span class="lang"><a href="">Fr</a> | <a href="">En</a></span>
-        </div>
-        <nav class="navbar__navigation">
-            <a href="#">
-                <h2 class="home__title">Les Pattes Heureuses</h2>
-                <p class="home__subtitle">Votre refuge Liègeois</p>
-            </a>
-            <ul>
-                <li><a href="">Accueil</a></li>
-                <li><a href="">Nos animaux</a></li>
-                <li><a href="">Devenir bénévole</a></li>
-                <li><a href="">Nous contacter</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+@include('public.components.header')
 <main>
     <aside>
     <div>

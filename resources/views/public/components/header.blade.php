@@ -29,7 +29,14 @@
             <li><a href="">Accueil</a></li>
             <li><a href="">Nos animaux</a></li>
             <li><a href="">Devenir bénévole</a></li>
-            <li><a class="u-btn" href="">Nous contacter</a></li>
+            <li><a class="cta__btn" href="">Nous contacter</a></li>
+        </ul>
+        <ul class="mobile__nav-bar__menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="41" height="17" viewBox="0 0 41 17" fill="none">
+                <line x1="1.5" y1="1.5" x2="39.5" y2="1.5" stroke="#414833" stroke-width="3" stroke-linecap="round"/>
+                <line x1="1.5" y1="8.5" x2="39.5" y2="8.5" stroke="#414833" stroke-width="3" stroke-linecap="round"/>
+                <line x1="1.5" y1="15.5" x2="39.5" y2="15.5" stroke="#414833" stroke-width="3" stroke-linecap="round"/>
+            </svg>
         </ul>
     </nav>
 </header>

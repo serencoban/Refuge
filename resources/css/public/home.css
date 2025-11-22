@@ -1,5 +1,5 @@
 /*********************** HERO WITH BACKGROUND IMAGE ********************************/
-.hero{
+.main__hero{
     background-image: url("/storage/app/public/main_cat.webp");
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,7 +15,7 @@
     font-size: 64px;
     font-weight: 700;
 }
-.hero__text{
+.main__hero__text{
     max-width: 500px;
     margin-bottom: 24px;
 }
@@ -28,7 +28,6 @@
     display: flex;
     gap: 20px;
     justify-content: space-between;
-
 }
 .step-card{
     margin-top: 64px;
@@ -68,24 +67,20 @@
     margin: 24px 0;
 
 }
-.card{
-    display: flex;
-    align-items: center;
-    flex: none;
-    flex-direction: column-reverse;
+.card {
     position: relative;
-    min-height: 366px;
-    border-radius: 16px;
-    padding: 24px;
+    width: 100%;
+    max-width: 400px;
+    height: 366px;
+    border-radius: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card-text__content {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 8px;
-    color: var(--white);
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(119, 72, 39, 0.25);
 }
 
 .image-container {
@@ -94,34 +89,95 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
-    cursor: pointer;
-
-    &::after {
-        content: '';
-        background: linear-gradient(rgba(237, 224, 212, 0), rgba(127, 85, 57, 1));
-        height: 100%;
-        width: 100%;
-        z-index: 0;
-        position: absolute;
-        top: 0;
-        left: 0;
-        border-radius: 1rem;
-    }
+    z-index: 1;
 }
 
-.animal-image {
+.image-container img {
     width: 100%;
     height: 100%;
-    z-index: -1;
-    border-radius: 2rem;
+    object-fit: none;
 }
 
-.card__arrow{
-    background-color: var(--beige);
-    color: var(--brown-txt);
-    padding: 16px 20px;
+.card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(to bottom, transparent, var(--brown));
+    z-index: 2;
+    pointer-events: none;
+}
+
+.card-text__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card__text__container {
+    flex: 1;
+}
+
+.card__title {
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 5px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.card__text {
+    color: rgba(255, 255, 255, 0.95);
+    font-size:16px;
+    margin-bottom: 8px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.card__status {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 14px;
+    font-style: italic;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+/* Bouton flèche */
+.card__btn {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover .card__btn {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.card__arrow {
+    background: rgba(237, 224, 212, 0.95);
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #5C4D3C;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.card__arrow:hover {
+    background: rgba(237, 224, 212, 1);
+    transform: scale(1.1);
 }
 
 /*********************** ABOUT US ********************************/
@@ -146,4 +202,39 @@
     top: -120px;
     left: -150px;
     z-index: -1;
+}
+
+/*********************** RESPONSIVE ********************************/
+@media (max-width: 1024px) {
+    .main__hero{
+        background-image: url("/storage/app/public/mobile-main-cat.png");
+        height: 60vh;
+    }
+    .main__hero__title{
+        font-size: 32px;
+    }
+    .main__hero__text{
+        max-width: 500px;
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+    .adopt__list{
+        flex-direction: column;
+    }
+    .step-card{
+        margin-top: 30px;
+    }
+    .step-card__number{
+        top: -28px;
+        font-size: 2rem;
+    }
+    .step-card__title{
+        font-size: 16px;
+    }
+    .step-card__link{
+        font-size: 12px;
+    }
+    .discover__animals p{
+        font-size: 14px;
+    }
 }

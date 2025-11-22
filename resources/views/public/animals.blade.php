@@ -1,124 +1,180 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Refuge">
-    <meta name="author" content="Coban Seren">
-    <title>Refuge - Accueil</title>
-    @vite('resources/css/app.css')
-</head>
-<body>
-<header class="header">
-    <div class="nav-info container">
-        <p class="nav-info__text">
-            Nous vous accueillons du lundi au samedi de 10h à 18h.
-            Venez rencontrer nos animaux et trouvez votre futur compagnon !
-        </p>
-        <span class="nav-info__lang">
-                <a href="">Fr</a> | <a href="">En</a>
-            </span>
-    </div>
-    <nav class="nav-bar container">
-        <a href="#" class="nav-bar__brand">
-            <h2 class="nav-bar__title">Les Pattes Heureuses</h2>
-            <p class="nav-bar__subtitle">Votre refuge Liégeois</p>
-        </a>
-        <ul class="nav-bar__menu">
-            <li><a href="">Accueil</a></li>
-            <li><a href="">Nos animaux</a></li>
-            <li><a href="">Devenir bénévole</a></li>
-            <li><a class="u-btn" href="">Nous contacter</a></li>
-        </ul>
-    </nav>
-</header>
-<main>
-    <section>
-        <h1 class="hero__title">Nos animaux</h1>
-        <svg width="319" height="15" viewBox="0 0 319 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+@include('public.components.header')
+
+<main class="animals-page">
+    <!-- SECTION HERO -->
+    <section class="animals-hero">
+        <h1 class="animals-hero__title">Nos animaux</h1>
+        <svg class="animals-hero__divider" width="319" height="15" viewBox="0 0 319 15" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M2.5 2.5H316.5" stroke="#EDE0D4" stroke-width="5" stroke-linecap="round"/>
             <path d="M44.5 12.5L295.391 3" stroke="#EDE0D4" stroke-width="5" stroke-linecap="round"/>
         </svg>
-        <p>Parcourez les profils de nos chiens, chats et petits compagnons en attente d’un nouveau foyer. Chaque animal a son histoire, son caractère et ses besoins : peut-être trouverez-vous ici votre futur compagnon de vie.</p>
+        <p class="animals-hero__subtitle">
+            Parcourez les profils de nos chiens, chats et petits compagnons en attente d'un nouveau foyer.
+            Chaque animal a son histoire, son caractère et ses besoins : peut-être trouverez-vous ici votre futur compagnon de vie.
+        </p>
     </section>
-    <section>
-        <div>
-            <p>Filtrer par:</p>
-            <a href="">Voir tous les animaux</a>
-            <div>
-                <label for="age"></label>
-                <select>
+
+    <section class="animals-list">
+        <div class="animals-filters">
+            <p class="animals-filters__label">Filtrer par:</p>
+            <a href="#" class="animals-filters__reset">Voir tous les animaux</a>
+            <div class="animals-filters__group">
+                <label for="age" class="animals-filters__group-label">Âge</label>
+                <select id="age" class="animals-filters__group-select">
+                    <option value="">Âge</option>
                     <option value="1">1 an</option>
-                    <option value="1">1 an</option>
-                    <option value="1">1 an</option>
-                    <option value="1">1 an</option>
-                    <option value="1">1 an</option>
+                    <option value="2">2 ans</option>
+                    <option value="3">3 ans</option>
+                    <option value="4">4 ans</option>
+                    <option value="5">5 ans</option>
                 </select>
             </div>
-            <div>
-                <label for="espece"></label>
-                <select>
-                    <option value="1">1 an</option>
-                    <option value="1">1 an</option>
-                    <option value="1">1 an</option>
-                    <option value="1">1 an</option>
-                    <option value="1">1 an</option>
+            <div class="animals-filters__group">
+                <label for="espece" class="animals-filters__group-label">Espèce</label>
+                <select id="espece" class="animals-filters__group-select">
+                    <option value="">Espèces</option>
+                    <option value="chien">Chien</option>
+                    <option value="chat">Chat</option>
+                    <option value="autre">Autre</option>
                 </select>
             </div>
-            <div>
-                <label for="pelage"></label>
-                <select>
-                    <option value="1">1 an</option>
-                    <option value="1">1 an</option>
-                    <option value="1">1 an</option>
-                    <option value="1">1 an</option>
-                    <option value="1">1 an</option>
+            <div class="animals-filters__group">
+                <label for="pelage" class="animals-filters__group-label">Pelage</label>
+                <select id="pelage" class="animals-filters__group-select">
+                    <option value="">Pelage</option>
+                    <option value="court">Court</option>
+                    <option value="long">Long</option>
+                    <option value="boucle">Bouclé</option>
                 </select>
             </div>
         </div>
+        <div class="card-grid">
+            <article class="card">
+                <div class="card-text__content">
+                    <div class="card__text__container">
+                        <h3 class="card__title">Moka</h3>
+                        <p class="card__text">Caniche – 5 ans</p>
+                        <p class="card__status">Adoptable</p>
+                    </div>
+                    <div class="card__btn">
+                        <a class="card__arrow" href="">→</a>
+                    </div>
+                </div>
+                <figure class="image-container">
+                    <img class="image" src="/storage/first-animal.png" alt="">
+                </figure>
+            </article>
+            <article class="card">
+                <div class="card-text__content">
+                    <div class="card__text__container">
+                        <h3 class="card__title">Moka</h3>
+                        <p class="card__text">Caniche – 5 ans</p>
+                        <p class="card__status">Adoptable</p>
+                    </div>
+                    <div class="card__btn">
+                        <a class="card__arrow" href="">→</a>
+                    </div>
+                </div>
+                <figure class="image-container">
+                    <img class="image" src="/storage/second-animal.png" alt="">
+                </figure>
+            </article>
+            <article class="card">
+                <div class="card-text__content">
+                    <div class="card__text__container">
+                        <h3 class="card__title">Moka</h3>
+                        <p class="card__text">Caniche – 5 ans</p>
+                        <p class="card__status">Adoptable</p>
+                    </div>
+                    <div class="card__btn">
+                        <a class="card__arrow" href="">→</a>
+                    </div>
+                </div>
+                <figure class="image-container">
+                    <img class="image" src="/storage/third-animal.png" alt="">
+                </figure>
+            </article>
+            <article class="card">
+                <div class="card-text__content">
+                    <div class="card__text__container">
+                        <h3 class="card__title">Moka</h3>
+                        <p class="card__text">Caniche – 5 ans</p>
+                        <p class="card__status">Adoptable</p>
+                    </div>
+                    <div class="card__btn">
+                        <a class="card__arrow" href="">→</a>
+                    </div>
+                </div>
+                <figure class="image-container">
+                    <img class="image" src="/storage/fourth-animal.png" alt="">
+                </figure>
+            </article>
+            <article class="card">
+                <div class="card-text__content">
+                    <div class="card__text__container">
+                        <h3 class="card__title">Moka</h3>
+                        <p class="card__text">Caniche – 5 ans</p>
+                        <p class="card__status">Adoptable</p>
+                    </div>
+                    <div class="card__btn">
+                        <a class="card__arrow" href="">→</a>
+                    </div>
+                </div>
+                <figure class="image-container">
+                    <img class="image" src="/storage/first-animal.png" alt="">
+                </figure>
+            </article>
+            <article class="card">
+                <div class="card-text__content">
+                    <div class="card__text__container">
+                        <h3 class="card__title">Moka</h3>
+                        <p class="card__text">Caniche – 5 ans</p>
+                        <p class="card__status">Adoptable</p>
+                    </div>
+                    <div class="card__btn">
+                        <a class="card__arrow" href="">→</a>
+                    </div>
+                </div>
+                <figure class="image-container">
+                    <img class="image" src="/storage/second-animal.png" alt="">
+                </figure>
+            </article>
+            <article class="card">
+                <div class="card-text__content">
+                    <div class="card__text__container">
+                        <h3 class="card__title">Moka</h3>
+                        <p class="card__text">Caniche – 5 ans</p>
+                        <p class="card__status">Adoptable</p>
+                    </div>
+                    <div class="card__btn">
+                        <a class="card__arrow" href="">→</a>
+                    </div>
+                </div>
+                <figure class="image-container">
+                    <img class="image" src="/storage/third-animal.png" alt="">
+                </figure>
+            </article>
+            <article class="card">
+                <div class="card-text__content">
+                    <div class="card__text__container">
+                        <h3 class="card__title">Moka</h3>
+                        <p class="card__text">Caniche – 5 ans</p>
+                        <p class="card__status">Adoptable</p>
+                    </div>
+                    <div class="card__btn">
+                        <a class="card__arrow" href="">→</a>
+                    </div>
+                </div>
+                <figure class="image-container">
+                    <img class="image" src="/storage/fourth-animal.png" alt="">
+                </figure>
+            </article>
+        </div>
 
-        <div class="cards__animal">
-            <div class="card__animal">
-                <div class="card__description">
-                    <h3>Moka</h3>
-                    <p>Caniche - 5 ans</p>
-                    <p>Adoptable</p>
-                </div>
-                <div class="btn__arrow">
-                    <a href="">-></a>
-                </div>
-            </div>
-            <div class="card__animal">
-                <div class="card__description">
-                    <h3>Moka</h3>
-                    <p>Caniche - 5 ans</p>
-                    <p>Adoptable</p>
-                </div>
-                <div class="btn__arrow">
-                    <a href="">-></a>
-                </div>
-            </div>
-            <div class="card__animal">
-                <div class="card__description">
-                    <h3>Moka</h3>
-                    <p>Caniche - 5 ans</p>
-                    <p>Adoptable</p>
-                </div>
-                <div class="btn__arrow">
-                    <a href="">-></a>
-                </div>
-            </div>
-            <div class="card__animal">
-                <div class="card__description">
-                    <h3>Moka</h3>
-                    <p>Caniche - 5 ans</p>
-                    <p>Adoptable</p>
-                </div>
-                <div class="btn__arrow">
-                    <a href="">-></a>
-                </div>
-            </div>
+        <div class="animals-list-footer">
+            <a href="#" class="btn-suivant">Suivant →</a>
         </div>
     </section>
 </main>
+
 @include('public.components.footer')

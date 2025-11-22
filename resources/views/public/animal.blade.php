@@ -1,45 +1,20 @@
-<!doctype html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Refuge">
-    <meta name="author" content="Coban Seren">
-    <title>Refuge - Accueil</title>
-    @vite('resources/css/app.css')
-</head>
-<body>
-<header class="header">
-    <div class="nav-info container">
-        <p class="nav-info__text">
-            Nous vous accueillons du lundi au samedi de 10h à 18h.
-            Venez rencontrer nos animaux et trouvez votre futur compagnon !
-        </p>
-        <span class="nav-info__lang">
-                <a href="">Fr</a> | <a href="">En</a>
-            </span>
-    </div>
-    <nav class="nav-bar container">
-        <a href="#" class="nav-bar__brand">
-            <h2 class="nav-bar__title">Les Pattes Heureuses</h2>
-            <p class="nav-bar__subtitle">Votre refuge Liégeois</p>
-        </a>
-        <ul class="nav-bar__menu">
-            <li><a href="">Accueil</a></li>
-            <li><a href="">Nos animaux</a></li>
-            <li><a href="">Devenir bénévole</a></li>
-            <li><a class="u-btn" href="">Nous contacter</a></li>
-        </ul>
-    </nav>
-</header>
+@include('public.components.header')
 <main>
     <section class="fiche__animal container">
         <div class="image__container">
             <img src="/storage/first-animal.png" alt="">
         </div>
         <div class="fiche__container">
-            <h1 class="hero__title">La fiche de Moka</h1>
-            <a href="">Partager</a>
+            <div class="fiche__container__head">
+                <div>
+                    <h1 class="hero__title">La fiche de Moka</h1>
+                    <svg width="323" height="15" viewBox="0 0 323 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.5 2.5H319.587" stroke="#656D4A" stroke-width="5" stroke-linecap="round"/>
+                    <path d="M44.9128 12.5L298.27 3" stroke="#656D4A" stroke-width="5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <a href="">Partager</a>
+            </div>
             <div class="fiche__container__details">
                 <p>Nom</p>
                 <strong>Moka</strong>
@@ -69,12 +44,13 @@
                 <strong>En attente d’adoption</strong>
             </div>
         </div>
-
     </section>
     <section class="section__appointment container">
         <form class="form__appointment" method="GET" action="#">
+            <div class="form__appointment__details">
             <h2>Je voudrais planifier un rendez-vous pour rencontrer Moka</h2>
             <small>Remplissez le formulaire pour prendre un rendez-vous</small>
+                <div class="form__appointment__flex">
                 <div class="lastname__container">
                     <label for="lastname">Nom*</label>
                     <input class="lastname__input input" type="text" name="lastname" id="lastname" placeholder="ex: Coban">
@@ -83,6 +59,9 @@
                     <label for="firstname">Prenom*</label>
                     <input class="firstname__input input" type="text" name="firstname" id="firstname">
                 </div>
+
+                </div>
+                <div class="form__appointment__flex">
                 <div class="email__container">
                     <label for="email">Email*</label>
                     <input class="email__input input" type="email" name="email" id="email">
@@ -91,13 +70,19 @@
                     <label for="tel">Numéro de téléphone*</label>
                 <input class="tel__input input" type="tel" name="name" id="name">
                 </div>
+
+                </div>
                 <div class="desc__container">
                     <label for="desc">Description*</label>
                     <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
                 </div>
-            <button class="u-btn" type="submit">Envoyer le formulaire</button>
+                <button class="cta__btn" type="submit">Envoyer le formulaire</button>
+            </div>
+            <div class="form__image__container">
+                <img class="form__image" src="/storage/bunny.png" alt="">
+            </div>
         </form>
-        <img src="/storage/bunny.png" alt="">
+
     </section>
     <section class="section discover container">
         <div class="discover__animals">
@@ -175,9 +160,8 @@
         </div>
 
         <div class="u-center">
-            <a href="" class="u-btn">Voir tous nos animaux</a>
+            <a href="" class="cta__btn">Voir tous nos animaux</a>
         </div>
-
     </section>
 </main>
 @include('public.components.footer')
