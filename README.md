@@ -1,61 +1,59 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🐾 Refuge “Les Pattes Heureuses”
+Site web vitrine + tableau de bord administrateur pour la gestion d’un refuge animalier.
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Ce projet permet au public de découvrir les animaux disponibles à l’adoption et offre une interface d’administration complète pour gérer les fiches, les demandes et les bénévoles.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🌐 Fonctionnalités – Côté public (Vitrine)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### 🏠 Accueil  
+Présentation du refuge, informations pratiques, et accès rapide aux animaux.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 🐶 Liste des animaux  
+Affichage clair et filtrable des pensionnaires : chiens, chats, autres animaux.
 
-## Learning Laravel
+### 📄 Fiche d’un animal  
+Photo, description, caractère, statut (adoptable, en soins, adopté…), bouton “Demander un rendez-vous”.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+### ✉️ Contact  
+Formulaire de contact permettant au public d’envoyer un message au refuge.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 👥 Page “Bénévoles”  
+Présentation de l’équipe et du rôle des bénévoles.
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 🔐 Fonctionnalités – Côté administration
 
-### Premium Partners
+### 📊 Dashboard  
+Vue globale avec :
+- fiches en attente de validation  
+- demandes d’adoption  
+- activité récente  
+- rappels importants  
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### 🐾 Gestion des animaux  
+- création de fiches  
+- modification  
+- ajout de photos  
+- statut d’adoption  
+- notes internes  
+- validation des fiches proposées par les bénévoles  
 
-## Contributing
+### 📬 Gestion des demandes d’adoption  
+Consultation, suivi, mise à jour de statut, notification par email.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 👥 Bénévoles (Admin uniquement)  
+Création de comptes, gestion des accès et disponibilités.
 
-## Code of Conduct
+### 📈 Statistiques  
+Chiffres mensuels : animaux accueillis, adoptions réussies, pensionnaires restants, export PDF.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-
-Test
+## 🧱 Technologies
+- Laravel 10+  
+- Blade (HTML/CSS)  
+- PHP 8+  
+- MySQL / SQLite  
