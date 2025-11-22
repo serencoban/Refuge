@@ -17,3 +17,13 @@ Route::get('/animal', function () {
 Route::get('/contact', function () {
     return view('public.contact');
 });
+
+
+Route::get('/login', function () {
+    return view('auth.login');
+});
+
+
+Route::get('/register', function () {
+    return view('auth.register');
+});
