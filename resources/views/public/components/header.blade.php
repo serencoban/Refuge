@@ -6,7 +6,7 @@
     <meta name="description" content="Refuge">
     <meta name="author" content="Coban Seren">
     <title>Refuge - Accueil</title>
-    @vite('resources/css/app.css')
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body class="body">
@@ -30,7 +30,7 @@
             <li><a href="{{ __('/animals') }}">Nos animaux</a></li>
             <li><a class="cta__btn" href="{{ __('/contact') }}">Nous contacter</a></li>
         </ul>
-        <ul class="mobile__nav-bar__menu">
+        <ul id="burgerMenu" class="mobile__nav-bar__menu">
             <svg xmlns="http://www.w3.org/2000/svg" width="41" height="17" viewBox="0 0 41 17" fill="none">
                 <line x1="1.5" y1="1.5" x2="39.5" y2="1.5" stroke="#414833" stroke-width="3" stroke-linecap="round"/>
                 <line x1="1.5" y1="8.5" x2="39.5" y2="8.5" stroke="#414833" stroke-width="3" stroke-linecap="round"/>

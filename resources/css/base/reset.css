@@ -57,3 +57,7 @@ h2{
         font-weight: 500;
     }
 }
+
+.mobile__nav-bar__menu {
+    cursor: pointer;
+}
