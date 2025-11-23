@@ -8,7 +8,7 @@
         </div>
 
         <nav class="footer__right">
-            <ul class="footer__menu">
+            <ul id="footerMenu" class="footer__menu">
                 <li><a href={{ __('/') }}"">Accueil</a></li>
                 <li><a href="{{ __('/animals') }}">Nos animaux</a></li>
                 <li><a href="{{ __('/contact') }}">Nous contacter</a></li>
