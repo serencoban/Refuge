@@ -13,7 +13,7 @@
 <header class="header">
     <div class="nav-info container">
         <p class="nav-info__text">
-            Nous vous accueillons du lundi au samedi de 10h à 18h.
+            Nous vous accueillons du <strong>lundi au samedi de 10h à 18h</strong>.
             Venez rencontrer nos animaux et trouvez votre futur compagnon !
         </p>
         <span class="nav-info__lang">
@@ -21,15 +21,14 @@
             </span>
     </div>
     <nav class="nav-bar container">
-        <a href="#" class="nav-bar__brand">
+        <a href="{{ __('/') }}" class="nav-bar__brand">
             <h2 class="nav-bar__title">Les Pattes Heureuses</h2>
             <p class="nav-bar__subtitle">Votre refuge Liégeois</p>
         </a>
         <ul class="nav-bar__menu">
-            <li><a href="">Accueil</a></li>
-            <li><a href="">Nos animaux</a></li>
-            <li><a href="">Devenir bénévole</a></li>
-            <li><a class="cta__btn" href="">Nous contacter</a></li>
+            <li><a href="{{ __('/') }}">Accueil</a></li>
+            <li><a href="{{ __('/animals') }}">Nos animaux</a></li>
+            <li><a class="cta__btn" href="{{ __('/contact') }}">Nous contacter</a></li>
         </ul>
         <ul class="mobile__nav-bar__menu">
             <svg xmlns="http://www.w3.org/2000/svg" width="41" height="17" viewBox="0 0 41 17" fill="none">

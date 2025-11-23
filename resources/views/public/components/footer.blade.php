@@ -9,10 +9,9 @@
 
         <nav class="footer__right">
             <ul class="footer__menu">
-                <li><a href="">Accueil</a></li>
-                <li><a href="">Nos animaux</a></li>
-                <li><a href="">Devenir bénévole</a></li>
-                <li><a href="">Nous contacter</a></li>
+                <li><a href={{ __('/') }}"">Accueil</a></li>
+                <li><a href="{{ __('/animals') }}">Nos animaux</a></li>
+                <li><a href="{{ __('/contact') }}">Nous contacter</a></li>
             </ul>
         </nav>
     </div>

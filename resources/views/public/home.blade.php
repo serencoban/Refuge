@@ -6,7 +6,7 @@
             Nous accueillons chaque année des dizaines d’animaux dans le besoin.
             Découvrez-les et aidez-les à trouver un nouveau foyer.
         </p>
-        <a href="" class="cta__btn">Voir tous nos animaux</a>
+        <a href="{{ __('/animals') }}" class="cta__btn">Voir tous nos animaux</a>
     </section>
     <section class="section adopt container">
         <h2>Comment adopter ?</h2>
@@ -102,9 +102,8 @@
             </article>
         </div>
         <div class="u-center">
-            <a href="" class="cta__btn">Voir tous nos animaux</a>
+            <a href="{{ __('/animals') }}" class="cta__btn">Voir tous nos animaux</a>
         </div>
-
     </section>
     <section class="section about container about-grid">
 
@@ -125,7 +124,7 @@
                 Chaque histoire est unique, et nous mettons tout en œuvre pour leur redonner confiance, santé et amour
             </p>
 
-            <a href="" class="cta__btn">Rejoignez-nous</a>
+            <a href="{{ __('/contact') }}" class="cta__btn">Rejoignez-nous</a>
         </div>
 
         <div class="about__image-area">

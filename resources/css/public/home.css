@@ -60,11 +60,11 @@
     margin-top: 16px;
 }
 
-.card-grid{
-    display: flex;
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     margin: 24px 0;
-
 }
 .card {
     position: relative;
@@ -236,8 +236,9 @@
     .discover__animals p{
         font-size: 14px;
     }
-    .card-grid{
-        flex-direction: column;
+    .card-grid {
+        grid-template-columns: 1fr;
+        place-items: center; /* centre les cartes */
     }
     .about__text{
         max-width: 800px;
