@@ -16,7 +16,7 @@
     <section class="animals-list">
         <div class="animals-filters">
             <p class="animals-filters__label">Filtrer par:</p>
-            <a href="#" class="animals-filters__reset">Voir tous les animaux</a>
+            <a href="#" class="cta__btn">Voir tous les animaux</a>
             <div class="animals-filters__group">
                 <label for="age" class="animals-filters__group-label">Âge</label>
                 <select id="age" class="animals-filters__group-select">
@@ -46,6 +46,7 @@
                     <option value="boucle">Bouclé</option>
                 </select>
             </div>
+            <a href="" class="cta__btn">Filtrer</a>
         </div>
         <div class="card-grid">
             <article class="card">
@@ -59,9 +60,9 @@
                         <a class="card__arrow" href="">→</a>
                     </div>
                 </div>
-                <figure class="image-container">
+                <div class="image-container">
                     <img class="image" src="/storage/first-animal.png" alt="">
-                </figure>
+                </div>
             </article>
             <article class="card">
                 <div class="card-text__content">
@@ -74,9 +75,7 @@
                         <a class="card__arrow" href="">→</a>
                     </div>
                 </div>
-                <figure class="image-container">
-                    <img class="image" src="/storage/second-animal.png" alt="">
-                </figure>
+                    <img class="image" src="/storage/moka.jpg" alt="">
             </article>
             <article class="card">
                 <div class="card-text__content">
@@ -89,9 +88,9 @@
                         <a class="card__arrow" href="">→</a>
                     </div>
                 </div>
-                <figure class="image-container">
+                <div class="image-container">
                     <img class="image" src="/storage/third-animal.png" alt="">
-                </figure>
+                </div>
             </article>
             <article class="card">
                 <div class="card-text__content">
@@ -104,9 +103,9 @@
                         <a class="card__arrow" href="">→</a>
                     </div>
                 </div>
-                <figure class="image-container">
+                <div class="image-container">
                     <img class="image" src="/storage/fourth-animal.png" alt="">
-                </figure>
+                </div>
             </article>
             <article class="card">
                 <div class="card-text__content">
@@ -119,9 +118,9 @@
                         <a class="card__arrow" href="">→</a>
                     </div>
                 </div>
-                <figure class="image-container">
+                <div class="image-container">
                     <img class="image" src="/storage/first-animal.png" alt="">
-                </figure>
+                </div>
             </article>
             <article class="card">
                 <div class="card-text__content">
@@ -134,9 +133,9 @@
                         <a class="card__arrow" href="">→</a>
                     </div>
                 </div>
-                <figure class="image-container">
+                <div class="image-container">
                     <img class="image" src="/storage/second-animal.png" alt="">
-                </figure>
+                </div>
             </article>
             <article class="card">
                 <div class="card-text__content">
@@ -149,9 +148,9 @@
                         <a class="card__arrow" href="">→</a>
                     </div>
                 </div>
-                <figure class="image-container">
+                <div class="image-container">
                     <img class="image" src="/storage/third-animal.png" alt="">
-                </figure>
+                </div>
             </article>
             <article class="card">
                 <div class="card-text__content">
@@ -164,9 +163,9 @@
                         <a class="card__arrow" href="">→</a>
                     </div>
                 </div>
-                <figure class="image-container">
+                <div class="image-container">
                     <img class="image" src="/storage/fourth-animal.png" alt="">
-                </figure>
+                </div>
             </article>
         </div>
 

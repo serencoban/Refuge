@@ -1,21 +1,12 @@
-@import 'tailwindcss';
-
 @import "./public/animal.css";
 @import "./public/animals.css";
 @import "./public/contact.css";
 @import "./public/home.css";
-
 @import "./base/reset.css";
-
 @import "./layout/header.css";
 @import "./layout/footer.css";
-
 @import "./auth/login.css";
-
-
 @import "./admin/dashboard.css";
-
-
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';

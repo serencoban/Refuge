@@ -1,4 +1,3 @@
-
 :root {
     --forest-green: #656D4A;
     --white: white;
@@ -11,6 +10,7 @@
     --bg-beige:#FFFCF8;
     --admin--green:#ADC178;
     --admin-txt : #363636;
+    --admin-background : #0c0c0c;
 }
 
 * {
@@ -19,7 +19,14 @@
     font-family: 'Poppins', Arial, sans-serif;
     box-sizing: content-box;
 }
+a{
+    text-decoration: none;
+    color: var(--brown-txt);
+}
 
+li{
+    list-style: none;
+}
 .container{
     padding: 0 96px 96px;
 
@@ -27,7 +34,7 @@
 
 .cta__btn{
     background-color: var(--forest-green);
-    border-radius: 1rem;
+    border-radius: 2rem;
     color: var(--white);
     display: inline-block;
     padding: 16px 32px;

@@ -1,4 +1,4 @@
-.auth__form__block{
+.auth__form__block {
     background-image: url('/storage/app/public/auth-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -8,15 +8,18 @@
     height: 100vh;
     flex-direction: column;
 }
-.auth__form__block h1{
+
+.auth__form__block h1 {
     color: var(--admin--green);
     font-size: 40px;
     font-weight: 700;
 }
-.auth__form{
+
+.auth__form {
     margin-top: 24px;
 }
-.auth__form__container{
+
+.auth__form__container {
     background-color: var(--bg-beige);
     padding: 64px;
     border-radius: 16px;
@@ -27,7 +30,7 @@
     justify-content: center;
 }
 
-.auth__name__input, .auth__pass__input{
+.auth__name__input, .auth__pass__input {
     display: block;
     background-color: var(--white);
     border: 1px solid var(--brown);
@@ -35,11 +38,12 @@
     padding: 4px 16px;
     margin-top: 8px;
 }
-.auth__pass, .auth__name{
+
+.auth__pass, .auth__name {
     margin-bottom: 24px;
 }
 
-.auth__cta{
+.auth__cta {
     display: block;
     text-align: center;
     background-color: var(--forest-green);
@@ -47,17 +51,20 @@
     padding: 12px;
     border-radius: 16px;
 }
-.auth__pass__forgot{
+
+.auth__pass__forgot {
     opacity: 60%;
 }
-.auth__btn{
+
+.auth__btn {
     display: flex;
     flex-direction: column;
 }
-.auth__small__link{
+
+.auth__small__link {
     color: var(--forest-green)
 }
-.auth__small__connect{
-    margin-top: 8px;
 
+.auth__small__connect {
+    margin-top: 8px;
 }
