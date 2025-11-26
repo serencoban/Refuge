@@ -120,7 +120,7 @@
                 petits compagnons qui n’attendent qu’une famille aimante. Depuis plus de 10 ans, notre équipe de
                 bénévoles passionnés veille chaque jour au bien-être des animaux, de leur arrivée jusqu’à leur adoption.
             </p>
-            <p>
+            <p class="about__paragraphs">
                 Chaque histoire est unique, et nous mettons tout en œuvre pour leur redonner confiance, santé et amour
             </p>
 

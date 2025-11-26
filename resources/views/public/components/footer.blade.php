@@ -1,4 +1,4 @@
-<footer class="footer container">
+<footer class="footer">
     <div class="footer__container">
         <div class="footer__left">
             <h2>Les Pattes Heureuses</h2>

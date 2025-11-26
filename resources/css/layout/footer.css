@@ -4,7 +4,7 @@ footer {
 
 }
 .footer__container{
-    padding-top: 32px;
+    padding: 40px;
     display: flex;
     justify-content: space-between;
     align-items: start;

@@ -51,6 +51,7 @@
 }
 .step-card__link{
     font-size: 14px;
+    text-decoration: underline;
 }
 
 /*********************** ANIMALS CARDS ********************************/
@@ -147,7 +148,6 @@
     text-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
-/* Bouton flèche */
 .card__btn {
     opacity: 0;
     transform: translateX(20px);
@@ -201,6 +201,10 @@
     top: -120px;
     left: -150px;
     z-index: -1;
+}
+
+.about__paragraphs{
+    margin-bottom: 24px;
 }
 
 /*********************** RESPONSIVE ********************************/

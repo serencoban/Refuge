@@ -10,6 +10,7 @@
 
     --bg-beige:#FFFCF8;
     --admin--green:#ADC178;
+    --admin-txt : #363636;
 }
 
 * {
@@ -19,13 +20,9 @@
     box-sizing: content-box;
 }
 
-body{
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
 .container{
     padding: 0 96px 96px;
+
 }
 
 .cta__btn{

@@ -1,0 +1,22 @@
+.admin__header{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    color: var(--admin-txt);
+    background-color: var(--white);
+}
+.admin__header__left{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.admin__header__right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.admin__main{
+    background-color: var(--bg-beige);
+}
+
