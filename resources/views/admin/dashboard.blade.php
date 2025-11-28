@@ -64,9 +64,12 @@
     </div>
     <div class="adopt-fiche__container">
         <section class="adoption-application__section">
-            <h2>Demande d'adoption</h2>
-            <table>
-                <tr>
+            <h2 class="adoption-application__title">
+                Demande d'adoption
+                <span class="adoption-application__notif">3</span>
+            </h2>
+            <table class="adoption-application__table">
+                <tr class="adoption-application__table__titles">
                     <th>Nom</th>
                     <th>Adopteur</th>
                     <th>Date de demande</th>
