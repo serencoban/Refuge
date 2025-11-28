@@ -1,10 +1,26 @@
 @include('admin.layouts.header')
-<main>
+<main class="admin-main">
     @include('admin.layouts.aside')
-    <div class="stats__container">
+
+    <div class="admin__main">
+
+            <div class="admin__header">
+                <h1 class="admin__header__left">Dashboard</h1>
+                <div class="admin__header__right">
+                    <div class="admin__header_notification-icon">
+                        <span class="admin__header__notification-badge">1</span>
+                    </div>
+                    <div class="admin__user-avatar">SC</div>
+                    <div class="admin__user-name">Seren<br>Coban</div>
+                </div>
+            </div>
+
+    <div class="main-content">
+        <div class="stats__container">
         <section class="stats-number__section">
             <div class="stats-number__filter">
-                <h2 class="hidden">Bonjour Elise</h2>
+                <h2 class="stats-number__title">Bonjour Elise</h2>
+                <div class="animals-filters__container">
                 <div class="animals-filters__group">
                     <label for="filter">Filter</label>
                     <select id="filter">
@@ -26,6 +42,7 @@
                                   fill="black"/>
                         </svg>
                         Exporter un rapport</a>
+                </div>
                 </div>
 
             </div>
@@ -119,9 +136,31 @@
                         accumsan mollis.</p>
                     <small>Il y a 5 min</small>
                 </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et nibh eget libero semper accumsan. Vestibulum est turpis, bibendum a est pretium, facilisis pulvinar lacus. Integer bibendum, libero nec laoreet molestie, elit massa pretium neque, congue feugiat est magna eget ex. Vivamus nulla quam, lobortis sed magna vel, volutpat aliquet lacus. Sed sed augue arcu. Proin malesuada magna vitae sagittis pulvinar. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec eget est mi. Maecenas vel mi eros. Phasellus pellentesque urna justo, non porta sem elementum non. Maecenas non posuere tellus, nec tempor turpis. Etiam ultrices pretium sapien, a interdum eros commodo vel. Duis bibendum lobortis eleifend. Vestibulum rutrum consectetur finibus. Curabitur cursus leo ipsum, quis accumsan neque faucibus at. Morbi maximus purus neque, non commodo quam vehicula eget.
+
+                    Mauris cursus sit amet tortor tincidunt suscipit. Donec convallis lorem et bibendum laoreet. Vestibulum semper leo dui, ac lacinia sapien facilisis vitae. Proin dictum ante sed congue viverra. Proin vehicula commodo leo sit amet sodales. Aliquam ut libero auctor, ultrices nunc id, dictum nisl. Mauris ac ipsum augue. Aliquam erat volutpat. Maecenas ac mauris vitae neque hendrerit ultrices ac a erat. Cras non auctor sapien. Vivamus aliquam fermentum odio, quis ultricies ipsum mollis dapibus. Sed ac justo sit amet enim dictum placerat. Maecenas ac tortor accumsan, luctus velit vitae, luctus odio. Quisque et magna ut mauris rutrum ornare.
+
+                    Phasellus ultrices, diam sit amet aliquet bibendum, dolor nisl consectetur nunc, a rhoncus nisl arcu nec sapien. Quisque ac dui ac dui cursus interdum. Proin interdum consequat imperdiet. Praesent volutpat leo quis ornare malesuada. Proin sit amet viverra diam. Vestibulum ut tellus dapibus, tempus urna in, ultricies enim. Sed ut dapibus orci, tincidunt sodales augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce hendrerit dapibus suscipit. Quisque facilisis quis lorem eget aliquam. Integer ac nulla elit. Proin convallis ut lacus id accumsan. Integer malesuada posuere dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum a nulla tortor. Maecenas eget volutpat lectus, eget viverra odio.
+
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean cursus elit mauris, sed pharetra ante pretium id. Curabitur consectetur odio at elit fringilla, nec luctus urna euismod. Nam tempor sodales nunc. In condimentum nec urna ut vulputate. Vestibulum sit amet vehicula mauris, id gravida mauris. Nullam sodales magna vitae sodales volutpat. Fusce vitae elementum neque, vel hendrerit quam. Vivamus malesuada efficitur lacus nec gravida. Nulla ultrices dapibus velit quis facilisis.
+
+                    Curabitur nisi lorem, venenatis eget eros quis, viverra hendrerit leo. Duis cursus felis quis nunc tristique varius. Sed vitae accumsan tortor. Cras eleifend viverra metus. Quisque felis purus, vehicula sit amet purus nec, laoreet rutrum orci. Aliquam tincidunt ante quis neque efficitur, nec semper leo imperdiet. Donec metus lectus, bibendum ornare tincidunt at, tincidunt at mauris. Vestibulum et maximus erat. Donec bibendum venenatis turpis, vel sagittis nisl scelerisque viverra. Etiam volutpat augue elit, eu commodo lorem mollis sit amet. Sed et sagittis est. Nulla facilisi. Suspendisse vel ligula sit amet est commodo imperdiet. Nunc ut sem dolor.
+
+                    Ut ipsum quam, dapibus ut nisl auctor, elementum dapibus nulla. Ut eleifend felis id consequat porta. Sed turpis turpis, maximus id ex eu, lacinia aliquam ante. Aliquam nec consequat ex. Vestibulum ac sem et quam pretium blandit. Quisque dignissim enim ut turpis tristique imperdiet. Maecenas et quam sit amet augue pharetra gravida. Sed massa nisi, varius ornare ullamcorper in, condimentum at augue. Donec vel elementum ex, eget vestibulum elit. Morbi aliquam commodo justo ut tempor.
+
+                    Praesent eget est vel quam ornare sollicitudin porttitor ut nunc. Quisque vulputate sollicitudin elit quis ultricies. Mauris viverra efficitur feugiat. Mauris dolor nisi, blandit ac tincidunt nec, vulputate sed enim. Duis aliquam accumsan tortor non mattis. Donec ex diam, imperdiet sit amet leo quis, ultricies interdum arcu. Maecenas sapien enim, imperdiet a auctor id, luctus in neque. Donec sit amet nulla ultricies, tempus tellus sed, tempus justo. Duis eget felis vitae tellus imperdiet bibendum a et ante. Vivamus consequat dolor mi, id volutpat nisi malesuada sed. Fusce maximus arcu non porttitor dapibus. In vehicula odio et tellus condimentum congue. Aenean vel nisl orci. Etiam dapibus at nisl eu tincidunt.
+
+                    Aenean vitae euismod orci. Maecenas tristique pulvinar augue, in dapibus tortor posuere vel. Pellentesque justo leo, tempor hendrerit dui eget, malesuada viverra turpis. Sed ex mi, vulputate mattis ex quis, scelerisque lacinia justo. Duis ultricies justo et justo aliquet, vel placerat nisi viverra. Fusce sit amet lacus cursus, rhoncus eros ut, aliquet mauris. Cras id rutrum risus, vitae sollicitudin leo. Aliquam sagittis nunc eget eros tristique, euismod scelerisque lacus tempor. Cras nec vehicula velit. Aenean cursus purus nisl, in eleifend mi rhoncus id. Integer ornare leo vel nisl lacinia finibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+
+                    Nullam eget suscipit nisi, vitae cursus leo. Nam tincidunt facilisis tortor, in volutpat dolor fermentum et. Donec ligula ipsum, suscipit in leo nec, scelerisque cursus metus. Morbi mollis condimentum lorem eget pharetra. Morbi fringilla lacinia augue, eu lacinia velit iaculis vel. Sed sit amet nisi eget erat ullamcorper rutrum et sed augue. Donec eu elementum est, et aliquam dolor. Pellentesque facilisis pretium metus, ac molestie lorem fringilla quis. Nunc vitae ante non velit ultricies fringilla. Donec ornare diam in volutpat pretium. Duis iaculis felis vel justo mattis, quis fermentum dolor suscipit.
+
+                    Maecenas at pretium sem, ac iaculis purus. Vivamus fermentum faucibus nibh non efficitur. Quisque quis mattis nibh, vitae commodo mauris. Mauris lacinia lectus sit amet urna ullamcorper interdum. Pellentesque nec ornare neque. Vivamus dignissim nisl lacus, in pulvinar est laoreet ut. Nullam in sapien consectetur, venenatis elit vel, rhoncus felis. Donec congue id dui quis fringilla. Ut molestie dui ac turpis suscipit, a imperdiet justo vehicula.</p>
             </div>
         </section>
     </div>
+    </div>
+    </div>
+
 </main>
 </body>
 </html>

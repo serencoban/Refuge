@@ -20,3 +20,15 @@
     background-color: var(--bg-beige);
 }
 
+.stats-number__filter{
+    display: flex;
+    justify-content: space-between;
+}
+
+.animals-filters__container{
+    display: flex;
+}
+.stats-number__title{
+    font-size: 32px;
+    font-weight: 700;
+}
