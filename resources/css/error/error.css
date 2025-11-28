@@ -1,0 +1,18 @@
+
+/**********************ERREUR*********************/
+.error__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 96px;
+}
+
+.error__title{
+    font-size: 64px;
+    font-weight: 500;
+}
+
+.error__txt{
+    margin-bottom: 24px;
+}
