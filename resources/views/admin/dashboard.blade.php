@@ -4,13 +4,25 @@
 
     <div class="admin__main">
             <div class="admin__header">
-                <ul id="burgerMenu" class="mobile__sidebar__menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="41" height="17" viewBox="0 0 41 17">
-                        <line x1="1.5" y1="1.5" x2="39.5" y2="1.5" stroke="#414833" stroke-width="3" stroke-linecap="round"/>
-                        <line x1="1.5" y1="8.5" x2="39.5" y2="8.5" stroke="#414833" stroke-width="3" stroke-linecap="round"/>
-                        <line x1="1.5" y1="15.5" x2="39.5" y2="15.5" stroke="#414833" stroke-width="3" stroke-linecap="round"/>
-                    </svg>
-                </ul>
+                <div id="menuToggle">
+                    <label for="menuCheckbox" class="visually-hidden">
+                        Toggle mobile menu
+                    </label>
+                    <input type="checkbox"
+                           id="menuCheckbox"
+                           aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <div role="navigation" id="mobileMenu" class="sidenav" aria-hidden="true">
+                        <ul class="menu">
+                            <li class="menu-item"><a href="">Dashboard</a></li>
+                            <li class="menu-item"><a href="">Animaux</a></li>
+                            <li class="menu-item"><a href="">Bénévole</a></li>
+                            <li class="menu-item"><a href="">Messages</a></li>
+                        </ul>
+                    </div>
+                </div>
                 <h1 class="admin__header__left">Dashboard</h1>
                 <div class="admin__header__right">
                     <div class="admin__header_notification-icon">
