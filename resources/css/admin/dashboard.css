@@ -32,3 +32,35 @@
     font-size: 32px;
     font-weight: 700;
 }
+.animals-filters__container{
+    display: flex;
+    gap: 32px;
+}
+
+.stats-number{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 32px;
+    gap: 32px;
+}
+.stats-number__box{
+    background-color: var(--white);
+    border-radius: 16px;
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0 0 11px 0;
+}
+.stats-number__box:nth-child(1){
+    border-top: 20px solid var(--admin-brown);
+}
+.stats-number__box:nth-child(2){
+    border-top: 20px solid var(--admin--green);
+}
+.stats-number__box:nth-child(3){
+    border-top: 20px solid var(--admin--light-green);
+}
+.stats-number__icon{
+    font-size: 48px;
+}

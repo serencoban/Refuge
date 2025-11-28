@@ -22,8 +22,8 @@
                 <h2 class="stats-number__title">Bonjour Elise</h2>
                 <div class="animals-filters__container">
                 <div class="animals-filters__group">
-                    <label for="filter">Filter</label>
-                    <select id="filter">
+                    <label for="filter">Filter par date :</label>
+                    <select class="cta-admin__btn" id="filter">
                         <option value="today">Aujourd'hui</option>
                         <option value="week">Cette semaine</option>
                         <option value="month">Ce mois-ci</option>
@@ -32,7 +32,7 @@
                     </select>
                 </div>
                 <div class="animals-filters__group">
-                    <a href="#">
+                    <a class="cta-admin__btn" href="#">
                         <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                   d="M1.5 6C1.22386 6 1 6.22386 1 6.5V14.5C1 14.7761 1.22386 15 1.5 15H10.5C10.7761 15 11 14.7761 11 14.5V6.5C11 6.22386 10.7761 6 10.5 6H8.5C8.22386 6 8 5.77614 8 5.5C8 5.22386 8.22386 5 8.5 5H10.5C11.3284 5 12 5.67157 12 6.5V14.5C12 15.3284 11.3284 16 10.5 16H1.5C0.671572 16 0 15.3284 0 14.5V6.5C0 5.67157 0.671573 5 1.5 5H3.5C3.77614 5 4 5.22386 4 5.5C4 5.77614 3.77614 6 3.5 6H1.5Z"
@@ -46,17 +46,19 @@
                 </div>
 
             </div>
-            <div class="stats-number__one">
+            <div class="stats-number">
+            <div class="stats-number__box">
                 <strong class="stats-number__icon">20</strong>
                 <p class="stats-number__text">Animaux accueillis</p>
             </div>
-            <div class="stats-number__two">
+            <div class="stats-number__box">
                 <strong class="stats-number__icon">20</strong>
                 <p class="stats-number__text">Animaux accueillis</p>
             </div>
-            <div class="stats-number__three">
+            <div class="stats-number__box">
                 <strong class="stats-number__icon">20</strong>
                 <p class="stats-number__text">Animaux accueillis</p>
+            </div>
             </div>
         </section>
     </div>
