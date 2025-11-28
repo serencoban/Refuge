@@ -1,7 +1,4 @@
-.admin-main{
-    display: grid;
-    grid-template-columns: 250px 1fr;
-}
+
 .admin__sidebar{
     z-index: 1;
     height: 95vh;
@@ -36,4 +33,28 @@
 .logout{
     border-top: 1px solid var(--grey);
     padding-top: 16px;
+}
+
+@media (min-width: 1200px) {
+    .mobile__sidebar__menu {
+        display: none;
+    }
+
+    .admin-main {
+        display: grid;
+        grid-template-columns: 250px 1fr;
+    }
+}
+@media (max-width: 1200px) {
+    .mobile__sidebar__menu{
+
+    }
+    .admin__sidebar{
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .stats-number{
+        grid-template-columns: 1fr;
+    }
 }

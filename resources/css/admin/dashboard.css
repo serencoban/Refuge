@@ -1,24 +1,3 @@
-.admin__header{
-    display: flex;
-    justify-content: space-between;
-    padding: 16px;
-    color: var(--admin-txt);
-    background-color: var(--white);
-}
-.admin__header__left{
-    font-size: 32px;
-    font-weight: 700;
-}
-
-.admin__header__right{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.admin__main{
-    background-color: var(--bg-beige);
-}
 
 .stats-number__filter{
     display: flex;
@@ -199,4 +178,22 @@
 }
 .recent-message__date{
     color: #afafaf;
+}
+@media (min-width: 1200px) {
+
+}
+/************************** Responsive ****************************/
+@media (max-width: 1200px) {
+    .adopt-fiche__container, .notif-message__container{
+        grid-template-columns: 1fr;
+    }
+    .admin-main{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .animals-filters__container{
+        flex-direction: column;
+    }
 }
