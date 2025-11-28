@@ -96,16 +96,18 @@
             </table>
         </section>
         <section class="validate-form__section">
-            <div>
-                <h2>Fiche à valider</h2>
-                <span>1</span>
+            <div class="validate-form__header">
+                <h2 class="validate-form__title">Fiche à valider</h2>
+                <span class="validate-form__notif">1</span>
             </div>
-            <div>
-                <span>Fiche de Moka (envoyé par Adrien)</span>
-                <span>Fiche de Moka (envoyé par Adrien)</span>
+            <div class="validate-form__container">
+            <div class="validate-form__list">
+                <span class="validate-form__item">Fiche de Moka (envoyé par Adrien)</span>
+                <span class="validate-form__item">Fiche de Moka (envoyé par Adrien)</span>
             </div>
-            <div>
-                Voir toutes les fiches
+            <div class="validate-form__footer">
+                <a href="#" class="cta-admin__btn">Voir toutes les fiches</a>
+            </div>
             </div>
         </section>
     </div>
