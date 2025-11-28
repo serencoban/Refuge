@@ -123,29 +123,28 @@
             </div>
         </section>
         <section class="recent-message__section">
-            <div >
-                <h2>Messages récents</h2>
-                <div>Nouveau message</div>
+            <div class="recent-message__header">
+                <h2 class="recent-message__title">Messages récents</h2>
+                <div class="cta-admin__btn"><a href="#">Nouveau message</a></div>
             </div>
-            <div>
-                <div>
-                    <p>Adrien</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget eros eget magna
+            <div class="recent-message__list">
+                <div class="recent-message__list__item">
+                    <p class="recent-message__user">Adrien</p>
+                    <p class="recent-message__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget eros eget magna
                         accumsan mollis.</p>
-                    <small>Il y a 5 min</small>
+                    <small class="recent-message__date">Il y a 5 min</small>
                 </div>
-                <div>
-                    <p>Adrien</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget eros eget magna
+                <div class="recent-message__list__item">
+                    <p class="recent-message__user">Adrien</p>
+                    <p class="recent-message__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget eros eget magna
                         accumsan mollis.</p>
-                    <small>Il y a 5 min</small>
+                    <small class="recent-message__date">Il y a 5 min</small>
                 </div>
             </div>
         </section>
     </div>
     </div>
     </div>
-
 </main>
 </body>
 </html>
