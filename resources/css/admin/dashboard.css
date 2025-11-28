@@ -176,3 +176,27 @@
     padding: 20px 0;
     border-bottom: 1px solid var(--grey);
 }
+/************************* messages récents *****************/
+.recent-message__section{
+    background-color: var(--white);
+    box-shadow: rgba(149, 157, 165, 0.2) 0 0 11px 0;
+    padding: 32px;
+    border-radius: 16px;
+}
+
+.recent-message__header{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: space-between;
+}
+.recent-message__list__item{
+    border-bottom: 1px solid var(--grey);
+    padding: 16px 0;
+}
+.recent-message__user{
+    font-weight: 600;
+}
+.recent-message__date{
+    color: #afafaf;
+}
