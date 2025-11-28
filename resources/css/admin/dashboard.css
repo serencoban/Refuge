@@ -64,3 +64,61 @@
 .stats-number__icon{
     font-size: 48px;
 }
+/********************************** Second section ***************************/
+.adopt-fiche__container{
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 32px;
+}
+
+.adoption-application__section{
+    background-color: var(--white);
+    border-radius: 16px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0 0 11px 0;
+    padding: 32px;
+    max-width: 1200px;
+}
+
+.adoption-application__title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.adoption-application__notif {
+    background-color: var(--admin--green);
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 600;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.adoption-application__table {
+    width: 100%;
+    overflow: hidden;
+}
+
+.adoption-application__table__titles th {
+    padding: 0 16px 8px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.adoption-application__table tr {
+    text-align: center;
+    border-bottom: 1px solid var(--grey);
+    transition: background-color 0.2s;
+}
+
+.adoption-application__table td {
+    padding: 20px;
+    font-size: 16px;
+}
