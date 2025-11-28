@@ -1,4 +1,4 @@
-@include('public.components.header')
+@include('public.layouts.header')
 <main>
     <section class="fiche__animal container">
         <div class="image__container">
@@ -9,8 +9,8 @@
                 <div>
                     <h1 class="hero__title">La fiche de Moka</h1>
                     <svg width="323" height="15" viewBox="0 0 323 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2.5 2.5H319.587" stroke="#656D4A" stroke-width="5" stroke-linecap="round"/>
-                    <path d="M44.9128 12.5L298.27 3" stroke="#656D4A" stroke-width="5" stroke-linecap="round"/>
+                        <path d="M2.5 2.5H319.587" stroke="#656D4A" stroke-width="5" stroke-linecap="round"/>
+                        <path d="M44.9128 12.5L298.27 3" stroke="#656D4A" stroke-width="5" stroke-linecap="round"/>
                     </svg>
                 </div>
                 <a href="">Partager</a>
@@ -48,28 +48,29 @@
     <section class="section__appointment container">
         <form class="form__appointment" method="GET" action="#">
             <div class="form__appointment__details">
-            <h2>Je voudrais planifier un rendez-vous pour rencontrer Moka</h2>
-            <small>Remplissez le formulaire pour prendre un rendez-vous</small>
+                <h2>Je voudrais planifier un rendez-vous pour rencontrer Moka</h2>
+                <small>Remplissez le formulaire pour prendre un rendez-vous</small>
                 <div class="form__appointment__flex">
-                <div class="lastname__container">
-                    <label for="lastname">Nom*</label>
-                    <input class="lastname__input input" type="text" name="lastname" id="lastname" placeholder="ex: Coban">
-                </div>
-                <div class="firstname__container">
-                    <label for="firstname">Prenom*</label>
-                    <input class="firstname__input input" type="text" name="firstname" id="firstname">
-                </div>
+                    <div class="lastname__container">
+                        <label for="lastname">Nom*</label>
+                        <input class="lastname__input input" type="text" name="lastname" id="lastname"
+                               placeholder="ex: Coban">
+                    </div>
+                    <div class="firstname__container">
+                        <label for="firstname">Prenom*</label>
+                        <input class="firstname__input input" type="text" name="firstname" id="firstname">
+                    </div>
 
                 </div>
                 <div class="form__appointment__flex">
-                <div class="email__container">
-                    <label for="email">Email*</label>
-                    <input class="email__input input" type="email" name="email" id="email">
-                </div>
-                <div class="tel__container">
-                    <label for="tel">Numéro de téléphone*</label>
-                <input class="tel__input input" type="tel" name="name" id="name">
-                </div>
+                    <div class="email__container">
+                        <label for="email">Email*</label>
+                        <input class="email__input input" type="email" name="email" id="email">
+                    </div>
+                    <div class="tel__container">
+                        <label for="tel">Numéro de téléphone*</label>
+                        <input class="tel__input input" type="tel" name="name" id="name">
+                    </div>
 
                 </div>
                 <div class="desc__container">
@@ -164,4 +165,4 @@
         </div>
     </section>
 </main>
-@include('public.components.footer')
+@include('public.layouts.footer')

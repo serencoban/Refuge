@@ -32,3 +32,10 @@ Route::get('/dashboard', function () {
     return view('admin.dashboard');
 });
 
+Route::get('/animal-list', function () {
+    return view('admin.animal-list');
+});
+
+Route::get('/animal-card', function () {
+    return view('admin.animal-card');
+});

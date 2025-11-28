@@ -1,4 +1,4 @@
-@include('public.components.header')
+@include('public.layouts.header')
 <main class="main">
     <section class="main__hero container">
         <h1 class="main__hero__title">Les Pattes Heureuses</h1>
@@ -129,7 +129,8 @@
 
         <div class="about__image-area">
             <img class="about__image" src="/storage/mission-dog.png" alt="Refuge">
-            <svg class="about__image__svg" xmlns="http://www.w3.org/2000/svg" width="234" height="233" viewBox="0 0 234 233" fill="none">
+            <svg class="about__image__svg" xmlns="http://www.w3.org/2000/svg" width="234" height="233"
+                 viewBox="0 0 234 233" fill="none">
                 <circle cx="154" cy="152.174" r="80" fill="#EDE0D4"/>
                 <ellipse cx="37.1228" cy="113.172" rx="23" ry="30" transform="rotate(-63.4021 37.1228 113.172)"
                          fill="#EDE0D4"/>
@@ -142,5 +143,5 @@
 
     </section>
 </main>
-@include('public.components.footer')
+@include('public.layouts.footer')
 

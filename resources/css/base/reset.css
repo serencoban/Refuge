@@ -12,7 +12,10 @@
     --admin-txt : #363636;
     --admin-background : #0c0c0c;
 }
-
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 * {
     margin: 0;
     padding: 0;
@@ -31,7 +34,9 @@ li{
     padding: 0 96px 96px;
 
 }
-
+input, textarea{
+    border: none;
+}
 .cta__btn{
     background-color: var(--forest-green);
     border-radius: 2rem;
@@ -40,6 +45,7 @@ li{
     padding: 16px 32px;
     font-weight: 500;
     cursor: pointer;
+    border: none;
 }
 
 h2{

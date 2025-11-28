@@ -1,15 +1,17 @@
-@include('public.components.header')
+@include('public.layouts.header')
 
 <main class="animals-page">
     <section class="animals-hero">
         <h1 class="animals-hero__title">Nos animaux</h1>
-        <svg class="animals-hero__divider" width="319" height="15" viewBox="0 0 319 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="animals-hero__divider" width="319" height="15" viewBox="0 0 319 15" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
             <path d="M2.5 2.5H316.5" stroke="#EDE0D4" stroke-width="5" stroke-linecap="round"/>
             <path d="M44.5 12.5L295.391 3" stroke="#EDE0D4" stroke-width="5" stroke-linecap="round"/>
         </svg>
         <p class="animals-hero__subtitle">
             Parcourez les profils de nos chiens, chats et petits compagnons en attente d'un nouveau foyer.
-            Chaque animal a son histoire, son caractère et ses besoins : peut-être trouverez-vous ici votre futur compagnon de vie.
+            Chaque animal a son histoire, son caractère et ses besoins : peut-être trouverez-vous ici votre futur
+            compagnon de vie.
         </p>
     </section>
 
@@ -75,7 +77,7 @@
                         <a class="card__arrow" href="">→</a>
                     </div>
                 </div>
-                    <img class="image" src="/storage/moka.jpg" alt="">
+                <img class="image" src="/storage/moka.jpg" alt="">
             </article>
             <article class="card">
                 <div class="card-text__content">
@@ -175,4 +177,4 @@
     </section>
 </main>
 
-@include('public.components.footer')
+@include('public.layouts.footer')
