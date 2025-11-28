@@ -11,6 +11,8 @@
     --admin--green:#ADC178;
     --admin-txt : #363636;
     --admin-background : #0c0c0c;
+    --admin-brown : #A98467;
+    --admin--light-green: #DDE5B6;
     --grey: #e0e0e0
 }
 table {
@@ -48,7 +50,17 @@ input, textarea{
     cursor: pointer;
     border: none;
 }
-
+.cta-admin__btn{
+    background-color: var(--admin--green);
+    border-radius: 2rem;
+    color: var(--brown-txt);
+    text-align: center;
+    display: inline-block;
+    padding: 12px 32px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+}
 h2{
     font-size: 32px;
     font-weight: 500;
