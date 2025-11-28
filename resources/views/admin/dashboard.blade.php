@@ -66,7 +66,7 @@
         <section class="adoption-application__section">
             <h2 class="adoption-application__title">
                 Demande d'adoption
-                <span class="adoption-application__notif">3</span>
+                <span class="adoption-application__notif notif__badge">3</span>
             </h2>
             <table class="adoption-application__table">
                 <tr class="adoption-application__table__titles">
@@ -98,7 +98,7 @@
         <section class="validate-form__section">
             <div class="validate-form__header">
                 <h2 class="validate-form__title">Fiche à valider</h2>
-                <span class="validate-form__notif">1</span>
+                <span class="validate-form__notif notif__badge">1</span>
             </div>
             <div class="validate-form__container">
             <div class="validate-form__list">
@@ -113,20 +113,17 @@
     </div>
     <div class="notif-message__container">
         <section class="notification__section">
-            <div>
-                <h2>Notifications</h2>
-                <span>3</span>
+            <div class="notification__header">
+                <h2 class="notification__title">Notifications</h2>
+                <span class="notification__notif notif__badge">3</span>
             </div>
-            <div>
-                <span>Nouvelle demande d’adoption pour Moka 🐶</span>
-                <span>Tâche en attente : valider la fiche de Sarah 🐱</span>
-            </div>
-            <div>
-                Voir toutes les fiches
+            <div class="notification__list">
+                <span class="notification__list__item">Nouvelle demande d’adoption pour Moka 🐶</span>
+                <span class="notification__list__item">Tâche en attente : valider la fiche de Sarah 🐱</span>
             </div>
         </section>
         <section class="recent-message__section">
-            <div>
+            <div >
                 <h2>Messages récents</h2>
                 <div>Nouveau message</div>
             </div>
