@@ -36,6 +36,6 @@ Route::get('/animal-list', function () {
     return view('admin.animal-list');
 });
 
-Route::get('/animal-card', function () {
-    return view('admin.animal-card');
+Route::get('/animal-item', function () {
+    return view('admin.animal-item');
 });

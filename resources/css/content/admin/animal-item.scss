@@ -1,0 +1,31 @@
+.pet-status{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 16px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0 0 11px 0;
+    padding: 32px;
+
+    &__status{
+        display: flex;
+        gap: 8px;
+        align-items: center;
+
+        &__badge{
+            background-color: var(--admin--green);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    
+    &__actions{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+}
