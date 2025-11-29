@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Erreur</title>
-    @vite('resources/css/app.css')
+    @vite('resources/css/app.scss')
 </head>
 <body>
 <div class="error__container">

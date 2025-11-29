@@ -6,7 +6,7 @@
     <meta name="description" content="Refuge">
     <meta name="author" content="Coban Seren">
     <title>Refuge - Accueil</title>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.scss', 'resources/js/app.js'])
 </head>
 <body>
 <header class="main-content">

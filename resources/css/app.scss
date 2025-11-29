@@ -1,0 +1,27 @@
+@import "content/public/animal.scss";
+@import "content/public/animals.scss";
+@import "content/public/contact.scss";
+@import "content/public/home.scss";
+@import "content/admin/animal-list.scss";
+@import "content/admin/dashboard.scss";
+@import "content/auth/login.scss";
+@import "content/error/error.scss";
+
+@import "base/reset.scss";
+
+@import "component/header.scss";
+@import "component/footer.scss";
+@import "component/aside.scss";
+@import "component/header-admin.scss";
+
+
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
