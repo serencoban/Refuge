@@ -1,0 +1,100 @@
+.animals-filters__all{
+    padding: 12px 20px;
+    border: 2px solid var(--beige);
+    border-radius: 25px;
+    background: white;
+    font-size: 0.95rem;
+    color: var(--brown-txt);
+    min-width: 140px;
+    transition: all 0.3s ease;
+}
+
+.animals__table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 24px;
+    table-layout: fixed; /* Important pour le contrôle des largeurs */
+}
+
+.animals__row--head {
+    background-color: var(--white);
+    border-radius: 16px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0 0 11px 0;
+}
+
+.animals__row--head .animals__cell {
+    padding: 20px 24px;
+    font-weight: 600;
+    color: var(--brown-txt);
+}
+
+.animals__row {
+    background-color: var(--white);
+    border-radius: 16px;
+    position: relative;
+    box-shadow: rgba(149, 157, 165, 0.2) 0 0 11px 0;
+}
+
+.animals__cell {
+    padding: 16px 24px;
+    font-size: 16px;
+    color: var(--brown-txt);
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* Largeurs spécifiques pour chaque colonne */
+.animals__cell--image {
+    width: 100px;
+    text-align: center;
+}
+
+.animals__cell--name {
+    width: 15%;
+    font-weight: 500;
+}
+
+.animals__cell--type {
+    width: 12%;
+}
+
+.animals__cell--status {
+    width: 25%;
+}
+
+.animals__cell--date {
+    width: 18%;
+}
+
+.animals__cell--actions {
+    width: 15%;
+    text-align: right;
+}
+
+.animals__img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+.animals__row:not(.animals__row--head) .animals__cell:first-child {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.animals__row:not(.animals__row--head) .animals__cell:last-child {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.animals__row--head .animals__cell:first-child {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.animals__row--head .animals__cell:last-child {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
