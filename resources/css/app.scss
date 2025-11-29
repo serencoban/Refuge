@@ -14,15 +14,13 @@
 @import "component/footer.scss";
 @import "component/aside.scss";
 @import "component/header-admin.scss";
+@import "component/cta.scss";
 
-
+@import "settings/colors.scss";
+@import "settings/breakpoints.scss";
+@import "settings/fonts.scss";
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
 @source '../**/*.blade.php';
 @source '../**/*.js';
-
-@theme {
-    --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
-}
