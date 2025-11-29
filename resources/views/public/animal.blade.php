@@ -1,4 +1,4 @@
-@include('public.layouts.header')
+@include('components.header')
 <main>
     <section class="fiche__animal container">
         <div class="image__container">
@@ -165,4 +165,4 @@
         </div>
     </section>
 </main>
-@include('public.layouts.footer')
+@include('components.footer')
