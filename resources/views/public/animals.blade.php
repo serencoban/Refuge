@@ -1,4 +1,4 @@
-@include('public.layouts.header')
+@include('components.header')
 
 <main class="animals-page">
     <section class="animals-hero">
@@ -177,4 +177,4 @@
     </section>
 </main>
 
-@include('public.layouts.footer')
+@include('components.footer')

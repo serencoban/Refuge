@@ -1,6 +1,6 @@
-@include('admin.layouts.header')
+@include('components.header-admin')
 <main class="admin-main">
-    @include('admin.layouts.aside')
+    @include('components.aside')
 
     <div class="admin__main">
         <div class="admin__header">
