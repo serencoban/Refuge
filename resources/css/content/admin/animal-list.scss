@@ -40,33 +40,29 @@
     color: var(--brown-txt);
     vertical-align: middle;
     text-align: center;
-}
 
-.animals__cell--image {
-    width: 100px;
-    text-align: center;
-}
+    &--image {
+        width: 100px;
+        text-align: center;
+    }
+    &--name {
+        width: 15%;
+        font-weight: 500;
+    }
+    &--type {
+        width: 12%;
+    }
+    &--status {
+        width: 25%;
+    }
+    &--date {
+        width: 18%;
+    }
+    &--actions {
+        width: 15%;
+        text-align: right;
+    }
 
-.animals__cell--name {
-    width: 15%;
-    font-weight: 500;
-}
-
-.animals__cell--type {
-    width: 12%;
-}
-
-.animals__cell--status {
-    width: 25%;
-}
-
-.animals__cell--date {
-    width: 18%;
-}
-
-.animals__cell--actions {
-    width: 15%;
-    text-align: right;
 }
 
 .animals__img {
