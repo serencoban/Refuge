@@ -6,14 +6,13 @@
     font-size: 0.95rem;
     color: var(--brown-txt);
     min-width: 140px;
-    transition: all 0.3s ease;
 }
 
 .animals__table {
     width: 100%;
     border-collapse: separate;
     border-spacing: 0 24px;
-    table-layout: fixed; /* Important pour le contrôle des largeurs */
+    table-layout: fixed;
 }
 
 .animals__row--head {
@@ -43,7 +42,6 @@
     text-align: center;
 }
 
-/* Largeurs spécifiques pour chaque colonne */
 .animals__cell--image {
     width: 100px;
     text-align: center;
