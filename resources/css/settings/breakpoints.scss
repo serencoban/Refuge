@@ -16,9 +16,9 @@ $wide-min: 1800px;          // ≥ 1600px
         @content;
     }
 }
-// Max-Tablet : à partir de 600
+// Max-Tablet : jusqu'à de 1023
 @mixin max-tablet {
-    @media (min-width: #{$tablet-min}) {
+    @media (max-width: #{$tablet-max}) {
         @content;
     }
 }

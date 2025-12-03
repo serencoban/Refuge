@@ -16,10 +16,10 @@
                 <span></span>
                 <div role="navigation" id="mobileMenu" class="sidenav" aria-hidden="true">
                     <ul class="menu">
-                        <li class="menu-item"><a href="">Dashboard</a></li>
-                        <li class="menu-item"><a href="">Animaux</a></li>
-                        <li class="menu-item"><a href="">Bénévole</a></li>
-                        <li class="menu-item"><a href="">Messages</a></li>
+                        <li class="menu-item"><a href="{{ __('/dashboard') }}">Dashboard</a></li>
+                        <li class="menu-item"><a href="{{ __('/animal-list') }}">Animaux</a></li>
+                        <li class="menu-item"><a href="{{ __('/volunteer') }}">Bénévole</a></li>
+                        <li class="menu-item"><a href="{{ __('/messages') }}">Messages</a></li>
                     </ul>
                 </div>
             </div>
@@ -36,8 +36,9 @@
         <div class="main-content">
             <div class="stats__container">
                 <section class="stats-number__section">
+                    <h2 class="hidden">Statistique</h2>
                     <div class="stats-number__filter">
-                        <h2 class="stats-number__title">Bonjour Elise</h2>
+                        <p class="stats-number__title">Bonjour Elise</p>
                         <div class="animals-filters__container">
                             <div class="animals-filters__group">
                                 <label for="filter">Filter par date :</label>

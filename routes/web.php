@@ -39,3 +39,11 @@ Route::get('/animal-list', function () {
 Route::get('/animal-item', function () {
     return view('admin.animal-item');
 });
+
+Route::get('/volunteer', function () {
+    return view('admin.volunteer');
+});
+
+Route::get('/messages', function () {
+    return view('admin.messages');
+});
