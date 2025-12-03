@@ -1,23 +1,29 @@
-
+@import "../../settings/breakpoints";
 .stats-number__filter{
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+@include max-tablet{
+    flex-direction: column;
+}
 }
 
 .animals-filters__container{
     display: flex;
+    gap: 32px;
 }
+
 .stats-number__title{
     font-size: 32px;
     font-weight: 700;
 }
+
 .stats-number__text{
     font-size: 20px;
     font-weight: 500;
-}
-.animals-filters__container{
-    display: flex;
-    gap: 32px;
+    @include max-tablet{
+        font-size: 16px;
+    }
 }
 
 .stats-number{
@@ -25,27 +31,38 @@
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 32px;
     gap: 32px;
+    &__box{
+        background-color: var(--white);
+        border-radius: 16px;
+        padding: 16px 32px;
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0 0 11px 0;
+        @include max-tablet {
+            justify-content: center;
+        }
+
+        &:nth-child(1){
+            border-top: 20px solid var(--admin-brown);
+        }
+        &:nth-child(2){
+            border-top: 20px solid var(--admin--green);
+        }
+        &:nth-child(3){
+            border-top: 20px solid var(--admin--light-green);
+        }
+    }
+    &__icon{
+        font-size: 48px;
+        @include max-tablet{
+            font-size: 40px;
+        }
+    }
+@include max-tablet{
+    grid-template-columns: 1fr;
 }
-.stats-number__box{
-    background-color: var(--white);
-    border-radius: 16px;
-    padding: 32px;
-    display: flex;
-    align-items: center;
-    gap: 32px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0 0 11px 0;
-}
-.stats-number__box:nth-child(1){
-    border-top: 20px solid var(--admin-brown);
-}
-.stats-number__box:nth-child(2){
-    border-top: 20px solid var(--admin--green);
-}
-.stats-number__box:nth-child(3){
-    border-top: 20px solid var(--admin--light-green);
-}
-.stats-number__icon{
-    font-size: 48px;
+
 }
 /********************************** Second section ***************************/
 .adopt-fiche__container{
@@ -53,6 +70,9 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 32px;
+    @include max-tablet{
+        grid-template-columns: 1fr;
+    }
 }
 
 .adoption-application__section{
@@ -75,12 +95,11 @@
 .adoption-application__table {
     width: 100%;
     overflow: hidden;
-}
-
-.adoption-application__table__titles th {
-    padding: 0 16px 8px;
-    font-weight: 600;
-    text-align: center;
+    &__titles th {
+        padding: 0 16px 8px;
+        font-weight: 600;
+        text-align: center;
+    }
 }
 
 .adoption-application__table tr {
@@ -100,10 +119,12 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0 0 11px 0;
     border-radius: 16px;
 }
+
 .validate-form__header{
     display: flex;
     gap: 20px;
 }
+
 .notif__badge{
     background-color: var(--admin--green);
     color: var(--white);
@@ -116,14 +137,17 @@
     align-items: center;
     justify-content: center;
 }
+
 .validate-form__list{
     display: flex;
     flex-direction: column;
 }
+
 .validate-form__item{
     padding: 20px 0;
     border-bottom: 1px solid var(--grey);
 }
+
 .validate-form__container{
     display: flex;
     justify-content: space-between;
@@ -136,13 +160,18 @@
     grid-template-columns: 1fr 2fr;
     margin-top: 32px;
     gap: 32px;
+    @include max-tablet{
+        grid-template-columns: 1fr;
+    }
 }
+
 .notification__section{
     background-color: var(--white);
     padding: 32px;
     border-radius: 16px;
     box-shadow: rgba(149, 157, 165, 0.2) 0 0 11px 0;
 }
+
 .notification__header{
     display: flex;
     gap: 20px;
@@ -169,31 +198,16 @@
     align-items: center;
     justify-content: space-between;
 }
+
 .recent-message__list__item{
     border-bottom: 1px solid var(--grey);
     padding: 16px 0;
 }
+
 .recent-message__user{
     font-weight: 600;
 }
+
 .recent-message__date{
     color: #afafaf;
-}
-@media (min-width: 1200px) {
-
-}
-/************************** Responsive ****************************/
-@media (max-width: 1200px) {
-    .adopt-fiche__container, .notif-message__container{
-        grid-template-columns: 1fr;
-    }
-    .admin-main{
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 767px) {
-    .animals-filters__container{
-        flex-direction: column;
-    }
 }
