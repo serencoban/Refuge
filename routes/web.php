@@ -47,3 +47,4 @@ Route::get('/volunteer', function () {
 Route::get('/messages', function () {
     return view('admin.messages');
 });
+
