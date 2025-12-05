@@ -2,6 +2,15 @@
 .volunteer__head{
     display: flex;
     justify-content: space-between;
+
+    &__left{
+        display: flex;
+        gap: 16px;
+    }
+
+    @include max-tablet{
+        flex-direction: column;
+    }
 }
 .volunteer__grid{
     display: grid;
@@ -21,7 +30,7 @@
     &__item{
         padding: 24px;
         background-color: var(--white);
-        box-shadow: rgba(149, 157, 165, 0.2) 0 0 11px 0;
+        box-shadow: rgba(149, 157, 165, 0.2) 0 0 2px 0;
         border-radius: 16px;
         border-top: 20px solid var(--admin--light-green);
 
@@ -35,6 +44,10 @@
         &__time{
             display: flex;
             flex-direction: row;
+
+            time{
+                margin-left: 16px;
+            }
         }
     }
 }

@@ -6,19 +6,22 @@
     font-size: 0.95rem;
     color: var(--brown-txt);
     min-width: 140px;
+
+    &:hover{
+            border-color: var(--admin--green);
+    }
+    &:focus{
+        border-color: var(--admin--green);
+    }
 }
 
 .animals__table {
     width: 100%;
-    border-collapse: separate;
-    border-spacing: 0 24px;
-    table-layout: fixed;
+    box-shadow: rgba(149, 157, 165, 0.2) 0 0 2px 0;
 }
 
 .animals__row--head {
-    background-color: var(--white);
-    border-radius: 16px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0 0 11px 0;
+    background-color: var(--admin--light-green);
 }
 
 .animals__row--head .animals__cell {
@@ -31,7 +34,7 @@
     background-color: var(--white);
     border-radius: 16px;
     position: relative;
-    box-shadow: rgba(149, 157, 165, 0.2) 0 0 11px 0;
+    border-bottom: 1px solid var(--grey);
 }
 
 .animals__cell {
@@ -72,23 +75,4 @@
     object-fit: cover;
     display: block;
     margin: 0 auto;
-}
-.animals__row:not(.animals__row--head) .animals__cell:first-child {
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;
-}
-
-.animals__row:not(.animals__row--head) .animals__cell:last-child {
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 12px;
-}
-
-.animals__row--head .animals__cell:first-child {
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;
-}
-
-.animals__row--head .animals__cell:last-child {
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 12px;
 }

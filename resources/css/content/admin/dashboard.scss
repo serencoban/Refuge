@@ -33,12 +33,12 @@
     gap: 32px;
     &__box{
         background-color: var(--white);
-        border-radius: 16px;
+        border-radius: 8px;
         padding: 16px 32px;
         display: flex;
         align-items: center;
         gap: 32px;
-        box-shadow: rgba(149, 157, 165, 0.2) 0 0 11px 0;
+        box-shadow: rgba(149, 157, 165, 0.2) 0 0 2px 0;
         @include max-tablet {
             justify-content: center;
         }
@@ -54,7 +54,7 @@
         }
     }
     &__icon{
-        font-size: 48px;
+        font-size: 38px;
         @include max-tablet{
             font-size: 40px;
         }
@@ -77,8 +77,8 @@
 
 .adoption-application__section{
     background-color: var(--white);
-    border-radius: 16px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0 0 11px 0;
+    border-radius: 8px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0 0 2px 0;
     padding: 32px;
     max-width: 1200px;
 }
@@ -116,26 +116,13 @@
 .validate-form__section{
     background-color: var(--white);
     padding: 32px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0 0 11px 0;
-    border-radius: 16px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0 0 2px 0;
+    border-radius: 8px;
 }
 
 .validate-form__header{
     display: flex;
     gap: 20px;
-}
-
-.notif__badge{
-    background-color: var(--admin--green);
-    color: var(--white);
-    font-size: 12px;
-    font-weight: 600;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .validate-form__list{
@@ -168,8 +155,8 @@
 .notification__section{
     background-color: var(--white);
     padding: 32px;
-    border-radius: 16px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0 0 11px 0;
+    border-radius: 8px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0 0 2px 0;
 }
 
 .notification__header{
@@ -187,9 +174,9 @@
 /************************* messages récents *****************/
 .recent-message__section{
     background-color: var(--white);
-    box-shadow: rgba(149, 157, 165, 0.2) 0 0 11px 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0 0 2px 0;
     padding: 32px;
-    border-radius: 16px;
+    border-radius: 8px;
 }
 
 .recent-message__header{
