@@ -1,0 +1,40 @@
+@import "../../settings/breakpoints";
+.volunteer__head{
+    display: flex;
+    justify-content: space-between;
+}
+.volunteer__grid{
+    display: grid;
+    margin-top: 32px;
+    gap: 32px;
+    grid-template-columns: repeat(4, 1fr);
+
+    @include max-tablet {
+        grid-template-columns: 1fr;
+    }
+
+    &__title{
+        font-size: 20px ;
+        font-weight: 600;
+    }
+
+    &__item{
+        padding: 24px;
+        background-color: var(--white);
+        box-shadow: rgba(149, 157, 165, 0.2) 0 0 11px 0;
+        border-radius: 16px;
+        border-top: 20px solid var(--admin--light-green);
+
+        &__row{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 24px;
+        }
+
+        &__time{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
