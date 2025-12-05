@@ -49,9 +49,53 @@
                 <a class="cta-admin__btn">Publier</a>
             </div>
         </section>
-        <section class="pet-details"></section>
-        <aside class="pet-adoption"></aside>
-        <aside class="pet-note"></aside>
+        <div class="pet-grid">
+            <div class="pet-grid__right">
+                <section class="pet-details">
+                    <h2>Details</h2>
+                    <table>
+                        <tr>
+                            <th>Nom</th>
+                            <td>Moka</td>
+                        </tr>
+                        <tr>
+                            <th>Espèce</th>
+                            <td>Chat persan</td>
+                        </tr>
+                        <tr>
+                            <th>Sexe</th>
+                            <td>Femelle</td>
+                        </tr>
+                        <tr>
+                            <th>Age</th>
+                            <td>5 ans</td>
+                        </tr>
+                        <tr>
+                            <th>Vaccins</th>
+                            <td>Rage</td>
+                        </tr>
+                        <tr>
+                            <th>Pelage</th>
+                            <td>Doux</td>
+                        </tr>
+                        <tr>
+                            <th>Photo</th>
+                            <td><img src="/storage/app/public/first-animal.png" alt=""></td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+            <div class="pet-grid__left">
+                <aside class="pet-adoption">
+                    <h2>Demande d'adoption</h2>
+                    <p class="pet-grid__text">Personne n’a encore demandé Moka</p>
+                </aside>
+                <aside class="pet-note">
+                    <h2>Notes</h2>
+                    <p class="pet-grid__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse  eget eros eget magna accumsan mollis. Fusce nec laoreet magna. Nulla  elementum nisl id tempor interdum.</p>
+                </aside>
+            </div>
+        </div>
     </div>
     </div>
 </main>
