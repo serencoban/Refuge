@@ -69,7 +69,7 @@
             </div>
             <section class="animals">
                 <table class="animals__table">
-                    <tr class="animals__row animals__row--head">
+                    <tr class="animals__row--head">
                         <th class="animals__cell animals__cell--header">Image</th>
                         <th class="animals__cell animals__cell--header">Nom</th>
                         <th class="animals__cell animals__cell--header">Animal</th>

@@ -97,28 +97,25 @@
 
 .animals-filters__group-select {
     padding: 12px 35px 12px 20px;
-    border: 2px solid #E8DCC4;
-    border-radius: 25px;
-    background: white;
-    font-size: 0.95rem;
-    cursor: pointer;
+    border: 2px solid var(--beige);
     appearance: none;
-    font-family: inherit;
+    border-radius: 25px;
+    font-size: 0.95rem;
     color: #2C2C2C;
-    min-width: 140px;
-    transition: all 0.3s ease;
+    min-width: 86px;
     background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%23656D4A' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 15px center;
+    background-color: var(--white);
 }
 
 .animals-filters__group-select:hover {
-    border-color: #656D4A;
+    border-color: var(--admin--green);
 }
 
 .animals-filters__group-select:focus {
     outline: none;
-    border-color: #656D4A;
+    border-color: var(--admin--green);
 }
 
 /* LISTE DES CARTES */
