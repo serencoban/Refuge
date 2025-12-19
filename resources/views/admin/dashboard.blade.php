@@ -29,7 +29,7 @@
                     <span class="admin__header__notification-badge">1</span>
                 </div>
                 <div class="admin__user-avatar">SC</div>
-                <div class="admin__user-name">Seren<br>Coban</div>
+                <div class="admin__user-name"><a href="{{ __('/profile') }}">Seren Coban</a></div>
             </div>
         </div>
 
@@ -145,7 +145,7 @@
                 <section class="recent-message__section">
                     <div class="recent-message__header">
                         <h2 class="recent-message__title">Messages récents</h2>
-                        <div class="cta-admin__btn"><a href="#">Nouveau message</a></div>
+                        <div><a class="cta-admin__btn" href="#">Nouveau message</a></div>
                     </div>
                     <div class="recent-message__list">
                         <div class="recent-message__list__item">

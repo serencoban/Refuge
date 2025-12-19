@@ -35,6 +35,10 @@
     border-radius: 16px;
     position: relative;
     border-bottom: 1px solid var(--grey);
+    transition: 0.1s;
+    &:hover{
+        background-color: #fafafa;
+    }
 }
 
 .animals__cell {
@@ -57,6 +61,12 @@
     }
     &--status {
         width: 25%;
+        &--color{
+            font-style: normal;
+            background-color: var(--blue);
+            padding: 16px;
+            border-radius: 16px;
+        }
     }
     &--date {
         width: 18%;
@@ -67,7 +77,6 @@
     }
 
 }
-
 .animals__img {
     width: 60px;
     height: 60px;

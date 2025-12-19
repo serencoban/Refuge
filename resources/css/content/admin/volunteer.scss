@@ -13,15 +13,6 @@
     }
 }
 .volunteer__grid{
-    display: grid;
-    margin-top: 32px;
-    gap: 32px;
-    grid-template-columns: repeat(4, 1fr);
-
-    @include max-tablet {
-        grid-template-columns: 1fr;
-    }
-
     &__title{
         font-size: 20px ;
         font-weight: 600;
@@ -49,5 +40,16 @@
                 margin-left: 16px;
             }
         }
+    }
+}
+
+.volunteer_container{
+    display: grid;
+    margin-top: 32px;
+    gap: 32px;
+    grid-template-columns: repeat(4, 1fr);
+
+    @include max-tablet {
+        grid-template-columns: 1fr;
     }
 }

@@ -1,6 +1,7 @@
 @include('components.header-admin')
 <main class="admin-main">
     @include('components.aside')
+
     <div class="admin__main">
         <div class="admin__header">
             <div id="menuToggle">
@@ -22,7 +23,7 @@
                     </ul>
                 </div>
             </div>
-            <h1 class="admin__header__left">Messages</h1>
+            <h1 class="admin__header__left">Profile</h1>
             <div class="admin__header__right">
                 <div class="admin__header_notification-icon">
                     <span class="admin__header__notification-badge">1</span>
@@ -31,32 +32,16 @@
                 <div class="admin__user-name"><a href="{{ __('/profile') }}">Seren Coban</a></div>
             </div>
         </div>
-        <div class="main-content messages">
-            <section class="messages__left">
-                <h2>Boite de reception</h2>
-                <div>
-                    <div class="messages__left__div">
-                        <p>Adrien Charlier</p>
-                        <p>Lorem ipsum dolor sit amet</p>
-                        <small>11:20AM</small>
-                    </div>
-                    <div class="messages__left__div">
-                        <p>Adrien Charlier</p>
-                        <p>Lorem ipsum dolor sit amet</p>
-                        <small>11:20AM</small>
-                    </div>
+        <div class="main-content profile">
+            <aside class="profile__aside">
+                <div class="profile__aside__img">
+                    <a href=""></a>
                 </div>
-                <div>
-                    <a class="cta-admin__btn">Nouveau message</a>
-                </div>
-            </section>
-            <section class="messages__right">
-                <h2>Adrien Charlier</h2>
-                <small>11:20AM</small>
-                <div>
-                    <p>Lorem ipsum dolor sit amet</p>
-                    <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
-                </div>
+                <p class="profile__aside__name">Seren Coban</p>
+                <p class="profile__aside__email">serencobs@gmail.com</p>
+            </aside>
+            <section class="profile__section">
+
             </section>
         </div>
     </div>

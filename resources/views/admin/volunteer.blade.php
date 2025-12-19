@@ -1,6 +1,7 @@
 @include('components.header-admin')
 <main class="admin-main">
     @include('components.aside')
+
     <div class="admin__main">
         <div class="admin__header">
             <div id="menuToggle">
@@ -15,26 +16,20 @@
                 <span></span>
                 <div role="navigation" id="mobileMenu" class="sidenav" aria-hidden="true">
                     <ul class="menu">
-                        <li class="menu-item"><a href="">Dashboard</a></li>
-                        <li class="menu-item"><a href="">Animaux</a></li>
-                        <li class="menu-item"><a href="">Bénévole</a></li>
-                        <li class="menu-item"><a href="">Messages</a></li>
+                        <li class="menu-item"><a href="{{ __('/dashboard') }}">Dashboard</a></li>
+                        <li class="menu-item"><a href="{{ __('/animal-list') }}">Animaux</a></li>
+                        <li class="menu-item"><a href="{{ __('/volunteer') }}">Bénévole</a></li>
+                        <li class="menu-item"><a href="{{ __('/messages') }}">Messages</a></li>
                     </ul>
                 </div>
             </div>
-            <h1 class="admin__header__left">Liste de bénévoles</h1>
+            <h1 class="admin__header__left">Bénévole</h1>
             <div class="admin__header__right">
-                <a class="admin__header_notification-icon">
-                    <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="32" viewBox="0 0 28 32" fill="none">
-                            <path d="M14 32C16.2091 32 18 30.2091 18 28H10C10 30.2091 11.7909 32 14 32Z" fill="black"/>
-                            <path d="M14 3.8365L12.4056 4.1585C8.75105 4.89658 6.00004 8.12926 6.00004 12C6.00004 13.2556 5.73132 16.3945 5.08231 19.4843C4.76013 21.0182 4.32908 22.6153 3.75619 24H24.2438C23.6709 22.6152 23.2399 21.0182 22.9177 19.4843C22.2687 16.3945 22 13.2556 22 12C22 8.12923 19.249 4.89654 15.5944 4.15849L14 3.8365ZM26.4386 24C26.8851 24.8948 27.4029 25.602 28 26H0C0.597054 25.602 1.11489 24.8948 1.5614 24C3.35844 20.3987 4.00004 13.7583 4.00004 12C4.00004 7.15868 7.4404 3.1209 12.0097 2.19808C12.0033 2.13292 12 2.06684 12 2C12 0.895431 12.8954 0 14 0C15.1046 0 16 0.895431 16 2C16 2.06684 15.9967 2.13291 15.9903 2.19807C20.5596 3.12084 24 7.15865 24 12C24 13.7583 24.6416 20.3987 26.4386 24Z" fill="black"/>
-                        </svg>
-                    </span>
-                    <span class="admin__header__notification-badge">2</span>
-                </a>
+                <div class="admin__header_notification-icon">
+                    <span class="admin__header__notification-badge">1</span>
+                </div>
                 <div class="admin__user-avatar">SC</div>
-                <div class="admin__user-name">Seren<br>Coban</div>
+                <div class="admin__user-name"><a href="{{ __('/profile') }}">Seren Coban</a></div>
             </div>
         </div>
         <div class="main-content">
@@ -44,56 +39,12 @@
                         <h2>Tous les bénévoles</h2>
                         <span class="notif__badge">1</span>
                     </div>
-                    <a class="cta-admin__btn">Ajouter un bénévole</a>
+                    <a class="cta-admin__btn">+ Ajouter un bénévole</a>
                 </div>
-                <div class="volunteer__grid">
-                    <div class="volunteer__grid__item">
-                        <p class="volunteer__grid__title">Lilia Marechal</p>
-                        <div class="volunteer__grid__item__row">
-                            <p>Lundi</p>
-                            <div class="volunteer__grid__item__time">
-                                <time>9:00</time>
-                                <time>18:00</time>
-                            </div>
-                        </div>
-                        <div class="volunteer__grid__item__row">
-                            <p>Mardi</p>
-                            <div class="volunteer__grid__item__time">
-                                <time>9:00</time>
-                                <time>18:00</time>
-                            </div>
-                        </div>
-                        <div class="volunteer__grid__item__row">
-                            <p>Mercredi</p>
-                            <div class="volunteer__grid__item__time">
-                                <time>9:00</time>
-                                <time>18:00</time>
-                            </div>
-                        </div>
-                        <div class="volunteer__grid__item__row">
-                            <p>Jeudi</p>
-                            <div class="volunteer__grid__item__time">
-                                <time>9:00</time>
-                                <time>18:00</time>
-                            </div>
-                        </div>
-                        <div class="volunteer__grid__item__row">
-                            <p>Vendredi</p>
-                            <div class="volunteer__grid__item__time">
-                                <time>9:00</time>
-                                <time>18:00</time>
-                            </div>
-                        </div>
-                        <div class="volunteer__grid__item__row">
-                            <p>Samedi</p>
-                            <div class="volunteer__grid__item__time">
-                                <time>9:00</time>
-                                <time>18:00</time>
-                            </div>
-                        </div>
-                    </div>
-
-
+                <div class="volunteer_container">
+                    @for($i = 1; $i <=5 ; $i++)
+                        <x-card-volunteer></x-card-volunteer>
+                    @endfor
                 </div>
             </section>
         </div>
