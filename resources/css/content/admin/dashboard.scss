@@ -11,6 +11,17 @@
 .animals-filters__container{
     display: flex;
     gap: 32px;
+    @include mobile{
+        margin-top: 24px;
+        flex-direction: column;
+    }
+}
+
+.animals-filters__group{
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .stats-number__title{
@@ -74,6 +85,7 @@
         grid-template-columns: 1fr;
     }
 }
+
 
 .adoption-application__section{
     background-color: var(--white);

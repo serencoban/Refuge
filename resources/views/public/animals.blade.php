@@ -63,35 +63,7 @@
                     </div>
                 </div>
                 <div class="image-container">
-                    <img class="image" src="/storage/first-animal.png" alt="">
-                </div>
-            </article>
-            <article class="card">
-                <div class="card-text__content">
-                    <div class="card__text__container">
-                        <h3 class="card__title">Moka</h3>
-                        <p class="card__text">Caniche – 5 ans</p>
-                        <p class="card__status">Adoptable</p>
-                    </div>
-                    <div class="card__btn">
-                        <a class="card__arrow" href="">→</a>
-                    </div>
-                </div>
-                <img class="image" src="/storage/moka.jpg" alt="">
-            </article>
-            <article class="card">
-                <div class="card-text__content">
-                    <div class="card__text__container">
-                        <h3 class="card__title">Moka</h3>
-                        <p class="card__text">Caniche – 5 ans</p>
-                        <p class="card__status">Adoptable</p>
-                    </div>
-                    <div class="card__btn">
-                        <a class="card__arrow" href="">→</a>
-                    </div>
-                </div>
-                <div class="image-container">
-                    <img class="image" src="/storage/third-animal.png" alt="">
+                    <img class="image" src="/storage/first-animal.jpg" alt="">
                 </div>
             </article>
             <article class="card">
@@ -106,7 +78,7 @@
                     </div>
                 </div>
                 <div class="image-container">
-                    <img class="image" src="/storage/fourth-animal.png" alt="">
+                    <img class="image" src="/storage/second-dog.jpg" alt="">
                 </div>
             </article>
             <article class="card">
@@ -121,7 +93,7 @@
                     </div>
                 </div>
                 <div class="image-container">
-                    <img class="image" src="/storage/first-animal.png" alt="">
+                    <img class="image" src="/storage/third-cat.jpg" alt="">
                 </div>
             </article>
             <article class="card">
@@ -136,41 +108,10 @@
                     </div>
                 </div>
                 <div class="image-container">
-                    <img class="image" src="/storage/second-animal.png" alt="">
-                </div>
-            </article>
-            <article class="card">
-                <div class="card-text__content">
-                    <div class="card__text__container">
-                        <h3 class="card__title">Moka</h3>
-                        <p class="card__text">Caniche – 5 ans</p>
-                        <p class="card__status">Adoptable</p>
-                    </div>
-                    <div class="card__btn">
-                        <a class="card__arrow" href="">→</a>
-                    </div>
-                </div>
-                <div class="image-container">
-                    <img class="image" src="/storage/third-animal.png" alt="">
-                </div>
-            </article>
-            <article class="card">
-                <div class="card-text__content">
-                    <div class="card__text__container">
-                        <h3 class="card__title">Moka</h3>
-                        <p class="card__text">Caniche – 5 ans</p>
-                        <p class="card__status">Adoptable</p>
-                    </div>
-                    <div class="card__btn">
-                        <a class="card__arrow" href="">→</a>
-                    </div>
-                </div>
-                <div class="image-container">
-                    <img class="image" src="/storage/fourth-animal.png" alt="">
+                    <img class="image" src="/storage/fourth-cat.jpg" alt="">
                 </div>
             </article>
         </div>
-
         <div class="animals-list-footer">
             <a href="#" class="btn-suivant">Suivant →</a>
         </div>

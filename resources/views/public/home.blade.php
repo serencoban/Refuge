@@ -51,9 +51,9 @@
                         <a class="card__arrow" href="">→</a>
                     </div>
                 </div>
-                <figure class="image-container">
-                    <img class="image" src="/storage/first-animal.png" alt="">
-                </figure>
+                <div class="image-container">
+                    <img class="image" src="/storage/first-animal.jpg" alt="">
+                </div>
             </article>
             <article class="card">
                 <div class="card-text__content">
@@ -66,9 +66,9 @@
                         <a class="card__arrow" href="">→</a>
                     </div>
                 </div>
-                <figure class="image-container">
-                    <img class="image" src="/storage/second-animal.png" alt="">
-                </figure>
+                <div class="image-container">
+                    <img class="image" src="/storage/second-dog.jpg" alt="">
+                </div>
             </article>
             <article class="card">
                 <div class="card-text__content">
@@ -81,9 +81,9 @@
                         <a class="card__arrow" href="">→</a>
                     </div>
                 </div>
-                <figure class="image-container">
-                    <img class="image" src="/storage/third-animal.png" alt="">
-                </figure>
+                <div class="image-container">
+                    <img class="image" src="/storage/third-cat.jpg" alt="">
+                </div>
             </article>
             <article class="card">
                 <div class="card-text__content">
@@ -96,9 +96,9 @@
                         <a class="card__arrow" href="">→</a>
                     </div>
                 </div>
-                <figure class="image-container">
-                    <img class="image" src="/storage/fourth-animal.png" alt="">
-                </figure>
+                <div class="image-container">
+                    <img class="image" src="/storage/fourth-cat.jpg" alt="">
+                </div>
             </article>
         </div>
         <div class="u-center">

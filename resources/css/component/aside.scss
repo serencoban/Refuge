@@ -1,4 +1,3 @@
-
 .admin__sidebar{
     z-index: 1;
     height: 95vh;
@@ -13,17 +12,18 @@
 .admin__logo{
     color: var(--admin--green);
     font-weight: 700;
-    font-size: 24px;
+    font-size: 32px;
     max-width: 200px;
     margin-bottom: 16px;
 }
 .admin__menu-item{
-    padding: 16px  16px 16px 0;
+    padding: 24px  16px 24px 0;
     color: var(--brown-txt);
 }
 
 .admin__menu-item:active{
     background-color: var(--admin--green);
+    border-radius: 8px;
 }
 
 .admin__menu-icon{

@@ -48,3 +48,7 @@ Route::get('/messages', function () {
     return view('admin.messages');
 });
 
+Route::get('/profile', function () {
+    return view('admin.profile');
+});
+

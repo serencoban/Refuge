@@ -2,18 +2,21 @@
 <main>
     <section class="fiche__animal container">
         <div class="image__container">
-            <img src="/storage/first-animal.png" alt="">
+            <img class="image" src="/storage/second-dog.jpg" alt="">
         </div>
         <div class="fiche__container">
             <div class="fiche__container__head">
-                <div>
+                <div class="fiche__container__title">
                     <h1 class="hero__title">La fiche de Moka</h1>
                     <svg width="323" height="15" viewBox="0 0 323 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2.5 2.5H319.587" stroke="#656D4A" stroke-width="5" stroke-linecap="round"/>
                         <path d="M44.9128 12.5L298.27 3" stroke="#656D4A" stroke-width="5" stroke-linecap="round"/>
                     </svg>
                 </div>
-                <a href="">Partager</a>
+                <a class="cta__btn" href="">Partager</a>
+            </div>
+            <div>
+                <p>Moka est un gentil caniche très doux et sociable</p>
             </div>
             <div class="fiche__container__details">
                 <p>Nom</p>
@@ -24,16 +27,8 @@
                 <strong>Chat persan</strong>
             </div>
             <div class="fiche__container__details">
-                <p>Femelle</p>
-                <strong>Tigré</strong>
-            </div>
-            <div class="fiche__container__details">
                 <p>Age</p>
                 <strong>5 ans</strong>
-            </div>
-            <div class="fiche__container__details">
-                <p>Vaccins</p>
-                <strong>Inconnus</strong>
             </div>
             <div class="fiche__container__details">
                 <p>Caractère</p>
@@ -106,11 +101,10 @@
                         <a class="card__arrow" href="">→</a>
                     </div>
                 </div>
-                <figure class="image-container">
-                    <img class="image" src="/storage/first-animal.png" alt="">
-                </figure>
+                <div class="image-container">
+                    <img class="image" src="/storage/first-animal.jpg" alt="">
+                </div>
             </article>
-
             <article class="card">
                 <div class="card-text__content">
                     <div class="card__text__container">
@@ -122,11 +116,10 @@
                         <a class="card__arrow" href="">→</a>
                     </div>
                 </div>
-                <figure class="image-container">
-                    <img class="image" src="/storage/first-animal.png" alt="">
-                </figure>
+                <div class="image-container">
+                    <img class="image" src="/storage/second-dog.jpg" alt="">
+                </div>
             </article>
-
             <article class="card">
                 <div class="card-text__content">
                     <div class="card__text__container">
@@ -138,11 +131,10 @@
                         <a class="card__arrow" href="">→</a>
                     </div>
                 </div>
-                <figure class="image-container">
-                    <img class="image" src="/storage/first-animal.png" alt="">
-                </figure>
+                <div class="image-container">
+                    <img class="image" src="/storage/third-cat.jpg" alt="">
+                </div>
             </article>
-
             <article class="card">
                 <div class="card-text__content">
                     <div class="card__text__container">
@@ -154,9 +146,9 @@
                         <a class="card__arrow" href="">→</a>
                     </div>
                 </div>
-                <figure class="image-container">
-                    <img class="image" src="/storage/first-animal.png" alt="">
-                </figure>
+                <div class="image-container">
+                    <img class="image" src="/storage/fourth-cat.jpg" alt="">
+                </div>
             </article>
         </div>
 

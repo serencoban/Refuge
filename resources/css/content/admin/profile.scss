@@ -1,0 +1,29 @@
+.profile{
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr 2fr;
+
+    &__aside{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--white);
+        border-radius: 16px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0 0 2px 0;
+        padding: 24px;
+
+        &__img{
+            width: 100px;
+            height: 100px;
+            background-color: var(--forest-green);
+            border-radius: 50%;
+        }
+    }
+
+    &__section{
+        background-color: var(--white);
+        border-radius: 16px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0 0 2px 0;
+        padding: 24px;
+    }
+}

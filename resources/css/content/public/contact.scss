@@ -1,9 +1,14 @@
+@import "../../settings/breakpoints";
 .aside__form__container {
     display: grid;
-    grid-template-columns: 2fr 4fr; /* = 2/6 et 4/6 */
+    grid-template-columns: 2fr 4fr;
     align-items: stretch;
     gap: 20px;
     padding: 96px;
+
+    @include max-tablet{
+        padding: 32px;
+    }
 }
 .aside{
     background-color: var(--forest-green);
